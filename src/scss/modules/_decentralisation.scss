@@ -1,0 +1,60 @@
+.decentralisation {
+
+  .container {
+    position: relative;
+    padding-bottom: 135px;
+    //background: linear-gradient(to bottom, #6378ab 0%,#3c5596 42%,#3c5596 100%);
+    background: linear-gradient(to bottom, #516aaa 0%,#6377ab 58%,#3c5596 79%,#3c5596 100%);
+
+    .decentralisation--text {
+      position: relative;
+      z-index: 100;
+      padding: 1em;
+
+      @include breakpoint(600px) {
+        padding-top: 3em;
+      }
+
+      p {
+        display: block;
+        max-width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 34em;
+
+      }
+    }
+
+    .decentralisation--bg {
+      width: 100%;
+      height: 165px;
+      position: absolute;
+      bottom: 0;
+      opacity: 0.5;
+      background: url('/assets/img/svg/bg-cityscape.svg');
+      //background-repeat: repeat-x;
+      background-size: cover;
+    }
+
+  }
+
+  .decentralisation--text {
+
+    p {
+      color: $white;
+      //text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 34em;
+
+      &.decentralisation--gateway {
+        color: $yellow-light;
+        font-size: 2em;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+
+}

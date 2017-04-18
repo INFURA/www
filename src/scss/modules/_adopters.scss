@@ -1,0 +1,61 @@
+.adopters {
+
+  text-align: center;
+
+  >h3 {
+    @extend %heading;
+  }
+
+  .join {
+    color: $cyan;
+
+  }
+
+  .adopters--list{
+    list-style-type: none;
+    padding: 2em 0;
+
+    .col {
+      .adopters--img {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.adopters--img {
+
+  @extend .bg-logos;
+
+  &.adopters--img-btcrelay {
+    @include sprite($logos-btcrelay);
+  }
+
+  &.adopters--img-ujo {
+    @include sprite($logos-ujo);
+  }
+
+  &.adopters--img-benefactory {
+    @include sprite($logos-benefactory);
+  }
+
+  &.adopters--img-singular {
+    @include sprite($logos-singular);
+  }
+
+  &.adopters--img-regis {
+    @include sprite($logos-regis);
+  }
+
+  &.adopters--img-truffle {
+    @include sprite($logos-truffle);
+  }
+
+  &.adopters--img-uport {
+    @include sprite($logos-uport);
+  }
+
+  &.adopters--img-metamask {
+    @include sprite($logos-metamask);
+  }
+}

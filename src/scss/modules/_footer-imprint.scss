@@ -1,0 +1,39 @@
+.footer-imprint {
+  display: flex;
+
+  .footer-imprint--logo,
+  .footer-imprint--consensys,
+  .footer-imprint--logo {
+    padding: 1em;
+    >svg{
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+  .footer-imprint--logo,
+  .footer-imprint--consensys {
+    background-position: 0 -10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  }
+
+  .footer-imprint--logo {
+    width: 35em;
+    padding-left: 0;
+  }
+
+  .footer-imprint--text {
+  }
+
+  .footer-imprint--consensys {
+    background-image: url('/assets/img/svg/consensys-logo.svg');
+    min-height: 100px;
+    min-height: 100px;
+    min-width: 100px;
+    padding-right: 0;
+  }
+
+}

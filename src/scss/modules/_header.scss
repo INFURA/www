@@ -1,0 +1,43 @@
+.header {
+
+  &.container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .header--logo {
+    //width: 55%;
+    margin: 4em auto 2em;
+    //.header--logo--svg {}
+  }
+
+  .header--branding {
+    @extend .godzilla;
+    text-align: center;
+    background-size: contain;
+    min-height: 400px;
+    margin-top: 2em;
+    background-position: 75% top;
+
+    >h1 {
+      color: $white;
+    }
+
+    .header--mission {
+      color: $gray-light;
+      font-size: 1.2em;
+      max-width: 55%;
+      margin: 0 auto;
+    }
+
+    .btn.btn-lg {
+      margin: 1em 0 2em;
+      color: $blue;
+      border-radius: 2em;
+      text-transform: uppercase;
+      background-color: $yellow-light;
+      border-color: $yellow-light;
+
+    }
+  }
+}

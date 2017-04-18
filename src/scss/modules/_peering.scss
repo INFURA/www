@@ -1,0 +1,32 @@
+.peering {
+  display: flex;
+  color: $white;
+  h3 {
+    color: $yellow-light;
+  }
+
+  position: relative;
+
+  .peering--image {
+    background: url('/assets/img/svg/bg-radiotower-globe.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+
+  @include breakpoint(600px) {
+
+    strong {
+      font-size: 2em;
+    }
+
+    .peering--info {
+      width: 70%
+    }
+    .peering--image {
+      display: block;
+      width: 30%;
+      opacity: .5;
+    }
+  }
+}

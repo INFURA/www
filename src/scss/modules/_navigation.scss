@@ -1,0 +1,32 @@
+.navigation {
+  @include clearfix();
+
+  .nav--list {
+    @include inline-list();
+    float: right;
+    padding-top: 2em;
+
+    .nav--list-item {
+      display: inline-block;
+      padding: 0 .5em;
+      border-bottom: 2px solid $blue-mid;
+
+      & >a {
+        display: inline-block;
+        padding: .5em;
+        text-transform: uppercase;
+        color: $white;
+
+      }
+
+      &.is-active,
+      &:hover {
+        border-bottom-color: $cyan;
+        >a {
+          text-decoration: none;
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.services {
+  .services--item {
+
+    @include breakpoint(460px) {
+      padding-top: 2em;
+
+    }
+    color: $blue;
+    text-align: center;
+  }
+
+  .svg--icon-ethereum,
+  .svg--icon-ipfs,
+  .svg--icon-services-layer {
+    max-height: 7em;
+  }
+}

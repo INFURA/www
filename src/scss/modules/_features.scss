@@ -1,0 +1,91 @@
+.features {
+  text-align: center;
+
+  > h3 {
+    @extend %heading;
+
+    @include breakpoint(480px) {
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom: 2px solid $cyan;
+    }
+  }
+
+  .features--list{
+    width: 100%;
+    margin-top: 1em;
+    text-align: left;
+    padding: 0;
+    list-style-type: none;
+    padding-bottom: 1em;
+
+
+    @include breakpoint(480px) {
+      margin-top: 2em;
+    }
+
+    .feature--item {
+      @include clearfix;
+
+      //display: flex;
+      //flex-direction: row;
+      //align-items: center;
+      //justify-content: center;
+      //flex-shrink: 2;
+
+      .features--img {
+        float: left;
+        margin-bottom: 2em;
+        margin-right: 2em;
+
+        //@include breakpoint(480px) {
+        //  margin-top: 0em;
+        //}
+
+      }
+
+      .features--txt {
+        padding-bottom: 2em;
+        >strong {
+          display: block;
+        }
+      }
+
+    }
+  }
+
+
+
+}
+
+
+.features--img {
+
+  @extend .bg-features;
+
+  &.features--img-api {
+    @include sprite($features-api);
+
+  }
+
+  &.features--img-ferryman {
+    @include sprite($features-ferryman);
+  }
+
+  &.features--img-ipfs {
+    @include sprite($features-ipfs);
+  }
+
+  &.features--img-multiclient {
+    @include sprite($features-multiclient);
+  }
+
+  &.features--img-private {
+    @include sprite($features-private);
+  }
+
+  &.features--img-tls {
+    @include sprite($features-tls);
+  }
+}

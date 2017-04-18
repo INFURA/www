@@ -1,0 +1,121 @@
+$features-api: -0px -0px 75px 75px;
+$features-ferryman: -0px -75px 75px 75px;
+$features-ipfs: -0px -150px 75px 75px;
+$features-multiclient: -0px -225px 75px 75px;
+$features-private: -0px -300px 75px 75px;
+$features-tls: -0px -375px 75px 75px;
+$features-Kopie-ferryman: -0px -0px 95px 89px;
+$features-Kopie-api: -0px -89px 98px 91px;
+$features-Kopie-ipfs: -0px -180px 105px 95px;
+$features-Kopie-private: -0px -275px 109px 99px;
+$features-Kopie-tls: -0px -374px 115px 104px;
+$features-Kopie-multiclient: -0px -478px 123px 128px;
+$logos-benefactory: -0px -0px 75px 75px;
+$logos-btcrelay: -0px -75px 75px 75px;
+$logos-metamask: -0px -150px 75px 75px;
+$logos-regis: -0px -225px 75px 75px;
+$logos-singular: -0px -300px 75px 75px;
+$logos-truffle: -0px -375px 75px 75px;
+$logos-ujo: -0px -450px 75px 75px;
+$logos-uport: -0px -525px 75px 75px;
+$logos-Kopie-btcrelay: -0px -0px 192px 59px;
+$logos-Kopie-ujo: -0px -59px 136px 64px;
+$logos-Kopie-benefactory: -0px -123px 177px 83px;
+$logos-Kopie-singular: -0px -206px 175px 93px;
+$logos-Kopie-regis: -0px -299px 101px 96px;
+$logos-Kopie-truffle: -0px -395px 129px 120px;
+$logos-Kopie-uport: -0px -515px 111px 143px;
+$logos-Kopie-metamask: -0px -658px 132px 146px;
+$team-galano: -0px -0px 100px 100px;
+$team-junge: -0px -100px 100px 100px;
+$team-pietrzak: -0px -200px 100px 100px;
+$team-wuehler: -0px -300px 100px 100px;
+$team-Kopie-galano: -0px -0px 200px 200px;
+$team-Kopie-junge: -0px -200px 200px 200px;
+$team-Kopie-pietrzak: -0px -400px 200px 200px;
+$team-Kopie-wuehler: -0px -600px 200px 200px;
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+@function sprite-width($sprite) {
+   @return nth($sprite, 3);
+}
+@function sprite-height($sprite) {
+   @return nth($sprite, 4);
+}
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 1);
+  $sprite-offset-y: nth($sprite, 2);
+  background-position: $sprite-offset-x $sprite-offset-y;
+}
+@mixin sprite($sprite, $display: block) {
+   @include sprite-position($sprite);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: $display;
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+.bg-features {
+  background-image: url('/assets/img/sprite-features.jpg');
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .bg-features {
+    background-image: url('/assets/img/sprite-features@2x.jpg');
+    background-size: 75px 450px;
+  }
+}
+
+.bg-features-Kopie {
+  background-image: url('/assets/img/sprite-features-Kopie.jpg');
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .bg-features-Kopie {
+    background-image: url('/assets/img/sprite-features-Kopie@2x.jpg');
+    background-size: 123px 606px;
+  }
+}
+
+.bg-logos {
+  background-image: url('/assets/img/sprite-logos.jpg');
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .bg-logos {
+    background-image: url('/assets/img/sprite-logos@2x.jpg');
+    background-size: 75px 600px;
+  }
+}
+
+.bg-logos-Kopie {
+  background-image: url('/assets/img/sprite-logos-Kopie.jpg');
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .bg-logos-Kopie {
+    background-image: url('/assets/img/sprite-logos-Kopie@2x.jpg');
+    background-size: 192px 804px;
+  }
+}
+
+.bg-team {
+  background-image: url('/assets/img/sprite-team.jpg');
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .bg-team {
+    background-image: url('/assets/img/sprite-team@2x.jpg');
+    background-size: 100px 400px;
+  }
+}
+
+.bg-team-Kopie {
+  background-image: url('/assets/img/sprite-team-Kopie.jpg');
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .bg-team-Kopie {
+    background-image: url('/assets/img/sprite-team-Kopie@2x.jpg');
+    background-size: 200px 800px;
+  }
+}

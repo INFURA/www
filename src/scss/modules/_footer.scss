@@ -1,0 +1,40 @@
+.footer {
+
+  padding-top: 1.6%;
+  .container {
+
+
+    background: url('/assets/img/svg/bg-bridge.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    background-position: left bottom;
+
+    .footer-menu {
+      padding: 1em;
+      float: right;
+    }
+  }
+
+
+
+  .footer-menu {
+
+    .footer-menu--heading {
+      color: $yellow-light;
+      text-transform: uppercase;
+      font-size: 1em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li,
+    a {
+      color: $blue-lighter;
+    }
+  }
+
+}

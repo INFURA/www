@@ -1,0 +1,50 @@
+$white: #fff;
+$gray-light: #b9c0d5;
+
+$yellow-light: #efdf77; // Button, overlayBG
+// $headings_yellow: '#dfc519';
+//
+// // Blue
+$blue: #3c5596;
+
+$blue-mid: #6378ab;
+$blue-light: #f2f5fe;
+$blue-lighter: #e9effd;
+
+$cyan: #31bdf7;
+
+$headings-blue: $blue;
+
+
+
+// $gradient Team
+// Center #e9eef9
+// to #b5c9f6
+
+
+//
+
+%bg-blue {
+  background: $blue;
+  h1,
+  h2 {
+    color: $white;
+  }
+}
+
+%bg-blue-lighter {
+  background: $blue-lighter;
+
+  * {
+    color: $blue;
+  }
+}
+
+%bg-yellow {
+  background: $yellow-light;
+  color: $headings-blue;
+}
+
+%bg-gradient-blue {
+  background: linear-gradient($white, $blue-lighter);
+}

@@ -1,0 +1,30 @@
+.yellow-heading {
+  $height: 2.15em;
+  &.container-fluid {
+    padding: 0 ;
+  }
+
+  .yellow-heading--wrapper {
+    @extend %bg-yellow;
+
+  }
+
+
+  .container {
+    text-align: center;
+  }
+  &::after {
+    content: '';
+    display: block;
+    height: $height;
+    @extend %bg-yellow-edge;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  & + div:not(.grid-with-bg) {
+    margin-top: -$height;
+    padding-top: $height;
+  }
+}

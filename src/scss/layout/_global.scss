@@ -1,0 +1,92 @@
+.container-fluid {
+  padding: 0 3%;
+}
+.container {
+  margin: 0 auto;
+  max-width: 75em; // 1000px
+  padding: 1em 0 1.5em;
+
+  &.grid  {
+    padding: 0;
+  }
+}
+
+// Full background Grid.
+.grid-3 {
+  .grid-3--content {
+
+    .col {
+      width: 100%;
+    }
+
+    @include breakpoint(480px) {
+      display: flex;
+      flex-direction: row;
+
+      .col {
+        padding: 0 2em;
+        width: 33.3333%;
+      }
+    }
+
+  }
+  &.bg-full {
+    padding-top: 0!important;
+    .grid-3--content {
+      .col {
+        padding: 3em 1em 1em 1em;
+      }
+    }
+  }
+}
+
+.grid-2 {
+
+  .col {
+    width: 100%;
+  }
+
+  @include breakpoint(460px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .col {
+      width: 50%;
+      padding: 1em;
+    }
+  }
+
+}
+
+
+.grid-4 {
+
+  @include breakpoint(320px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .col {
+      width: 50%;
+      padding: .5em;
+
+    }
+  }
+
+
+  @include breakpoint(480px) {
+    .col {
+      width: 25%;
+      padding: 1em;
+
+    }
+  }
+
+}
+
+
+.visually-hidden {
+  @include breakpoint(screen) {
+    display: none;
+  }
+}
