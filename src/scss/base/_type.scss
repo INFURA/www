@@ -3,6 +3,7 @@ p {
   margin: 0;
   padding-bottom: ($line-height-computed / 2);
   line-height: $line-height-base;
+  font-weight: $font-weight-default;
 }
 
 h1, .h1,
@@ -24,8 +25,7 @@ h3, .h3 {
   }
 
   &.heavy {
-    font-family: $font-family-secondary;
-    font-weight: $font-weight-secondary-heavy;
+    font-weight: $font-weight-secondary-semiheavy;
     letter-spacing: 1px;
   }
 }
@@ -91,13 +91,19 @@ h1, h2, h3, h4, h5, h6, p {
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-%big-on-blue {
-  font-size: 1.6em;
-  line-height: 1.5;
-  font-weight: 100;
-  font-weight: lighter;
+%thin-on-blue {
+  font-size: 2.2em;
+  line-height: 1.2em;
+  font-weight: $font-weight-secondary-light;
+  color: $gray-light;
 
   @include breakpoint(600px) {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 }
+
+%text-on-blue {
+  line-height: 1.7em;
+  color: $text-color-light;
+}
+

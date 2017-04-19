@@ -9,13 +9,17 @@
   min-height: 400px;
   background-position: 0 0;
 
+  p {
+    @extend %text-on-blue;
+  }
+
 
   h3 {
     @extend %heading-yellow;
   }
 
   strong {
-    @extend %big-on-blue;
+    @extend %thin-on-blue;
   }
 
   .devops--text {

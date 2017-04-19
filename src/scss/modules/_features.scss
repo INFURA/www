@@ -47,14 +47,13 @@
 
       .features--txt {
         padding-bottom: 2em;
-        >strong {
+        > strong {
           display: block;
           color: $blue;
-          font-family: $font-family-secondary;
           font-weight: $font-weight-secondary-semiheavy;
-          font-size: 1.2em;
+          font-size: 1.1em;
         }
-        >p {
+        > p {
           margin-top: .3em;
           max-width: 75%;
           color: $gray;

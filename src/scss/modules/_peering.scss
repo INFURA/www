@@ -5,14 +5,13 @@
 
   h2 {
     @extend %heading-yellow;
-    font-family: $font-family-secondary;
     font-weight: $font-weight-secondary-semiheavy;
     letter-spacing: 1px;
     font-size: 2.5em;
   }
 
   strong {
-    @extend %big-on-blue;
+    @extend %thin-on-blue;
   }
 
   .peering--image {
@@ -23,15 +22,11 @@
   }
 
   p {
-    line-height: 1.7em;
+    @extend %text-on-blue;
   }
 
   p > strong {
-    font-family: $font-family-secondary;
-    font-weight: $font-weight-secondary-light;
-    font-size: 2.5em;
-    color: $gray-light;
-    line-height: 1.2em;
+    @extend %thin-on-blue;
   }
 
   @include breakpoint(600px) {
