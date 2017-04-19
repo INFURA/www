@@ -3,10 +3,29 @@
 
     @include breakpoint(460px) {
       padding-top: 2em;
+      padding-bottom: 2em;
 
     }
     color: $blue;
     text-align: center;
+
+    .h3-container {
+      height: 75px;
+      line-height: 75px;
+
+      h3 {
+        font-size: 1.5em;
+        vertical-align: middle;
+        padding: 0;
+        margin: 1em 0 0 0;
+        display: inline-block;
+      }
+    }
+
+    p {
+      margin-top: 1em;
+      line-height: 1.8em;
+    }
   }
 
   .svg--icon-ethereum,

@@ -8,16 +8,17 @@
 
     .nav--list-item {
       display: inline-block;
-      padding: 0 .5em;
-      border-bottom: 2px solid $blue-mid;
+      padding: 0 1em;
+      border-bottom: 1px solid $blue-mid;
 
       & >a {
         display: inline-block;
-        padding: .5em;
+        padding: 1em;
         text-transform: uppercase;
         color: $white;
         font-weight: $font-weight-light;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
+        font-size: 0.8em;
 
       }
 

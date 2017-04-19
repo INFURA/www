@@ -7,7 +7,7 @@
 
   .header--logo {
     //width: 55%;
-    margin: 4em auto 2em;
+    margin: 4em auto 0;
     //.header--logo--svg {}
   }
 
@@ -22,6 +22,7 @@
     >h1 {
       color: $white;
       font-size: 3.2em;
+      margin-bottom: .2em;
     }
 
     .header--mission {
@@ -30,16 +31,25 @@
       font-weight: $font-weight-light;
       max-width: 55%;
       margin: 0 auto;
+      line-height: 1.8em;
     }
 
     .btn.btn-lg {
-      margin: 1em 0 2em;
+      margin: 1em 0 3em;
       color: $blue;
       border-radius: 2em;
       text-transform: uppercase;
       background-color: $yellow-light;
       border-color: $yellow-light;
+      font-weight: $font-weight-light;
+      padding: 1em 2em;
+      font-size: 1em;
 
+      &:hover {
+        background-color: $cyan;
+        border-color: $cyan;
+        color: $white;
+      }
     }
   }
 }

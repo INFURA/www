@@ -3,8 +3,12 @@
   color: $white;
   position: relative;
 
-  h3 {
+  h2 {
     @extend %heading-yellow;
+    font-family: $font-family-secondary;
+    font-weight: $font-weight-secondary-semiheavy;
+    letter-spacing: 1px;
+    font-size: 2.5em;
   }
 
   strong {
@@ -18,10 +22,22 @@
     display: none;
   }
 
+  p {
+    line-height: 1.7em;
+  }
+
+  p > strong {
+    font-family: $font-family-secondary;
+    font-weight: $font-weight-secondary-light;
+    font-size: 2.5em;
+    color: $gray-light;
+    line-height: 1.2em;
+  }
+
   @include breakpoint(600px) {
 
     .peering--info {
-      width: 70%
+      width: 50%
     }
     .peering--image {
       display: block;

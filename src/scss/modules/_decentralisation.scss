@@ -21,7 +21,6 @@
         margin-right: auto;
         margin-left: auto;
         max-width: 34em;
-
       }
     }
 
@@ -48,6 +47,8 @@
       margin-right: auto;
       margin-left: auto;
       max-width: 34em;
+      line-height: 1.8em;
+      margin-bottom: 0.5em;
 
       &.decentralisation--gateway {
         @extend %heading-yellow;
