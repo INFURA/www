@@ -1,11 +1,15 @@
 .peering {
   display: flex;
   color: $white;
+  position: relative;
+
   h3 {
-    color: $yellow-light;
+    @extend %heading-yellow;
   }
 
-  position: relative;
+  strong {
+    @extend %big-on-blue;
+  }
 
   .peering--image {
     background: url('/assets/img/svg/bg-radiotower-globe.svg');
@@ -15,10 +19,6 @@
   }
 
   @include breakpoint(600px) {
-
-    strong {
-      font-size: 2em;
-    }
 
     .peering--info {
       width: 70%

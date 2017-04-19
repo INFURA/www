@@ -9,15 +9,18 @@
       width: 100%;
       height: auto;
     }
-
   }
 
-  .footer-imprint--logo,
-  .footer-imprint--consensys {
-    background-position: 0 -10px;
-    background-repeat: no-repeat;
-    background-size: contain;
-
+  .footer-imprint--logo {
+    display: none;
+    @include breakpoint(600px) {
+      display: block;
+      background-image: url('/assets/img/svg/infura-logo-footer.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 0;
+      margin-right: 1em;
+    }
   }
 
   .footer-imprint--logo {
@@ -29,11 +32,6 @@
   }
 
   .footer-imprint--consensys {
-    background-image: url('/assets/img/svg/consensys-logo.svg');
-    min-height: 100px;
-    min-height: 100px;
-    min-width: 100px;
-    padding-right: 0;
   }
 
 }

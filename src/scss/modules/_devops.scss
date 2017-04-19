@@ -1,0 +1,28 @@
+.devops {
+  color: $white;
+  position: relative;
+  @include clearfix();
+
+  background: url(/assets/img/svg/bg-city.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  background-position: 0 0;
+
+
+  h3 {
+    @extend %heading-yellow;
+  }
+
+  strong {
+    @extend %big-on-blue;
+  }
+
+  .devops--text {
+    @include breakpoint(480px) {
+      width: 50%;
+      float: right;
+      //margin-right: 1em;
+    }
+  }
+}
