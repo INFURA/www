@@ -2,6 +2,7 @@
 p {
   margin: 0;
   padding-bottom: ($line-height-computed / 2);
+  line-height: $line-height-base;
 }
 
 h1, .h1,
@@ -15,6 +16,17 @@ h3, .h3 {
   small,
   .small {
     font-size: 65%;
+  }
+
+  &.light {
+    font-family: $font-family-secondary;
+    font-weight: $font-weight-secondary-light;
+  }
+
+  &.heavy {
+    font-family: $font-family-secondary;
+    font-weight: $font-weight-secondary-heavy;
+    letter-spacing: 1px;
   }
 }
 
@@ -54,6 +66,14 @@ h3 {
 
 h4 {
   font-size: 1.1em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  & > sup,
+  & > .sup {
+    top: -1.2em;
+    font-size: .4em;
+  }
 }
 
 %heading {
