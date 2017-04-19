@@ -16,10 +16,13 @@
 
   h3 {
     @extend %heading-yellow;
+    padding-bottom: 1em;
+    margin-top: 1em;
   }
 
-  strong {
+  h4 {
     @extend %thin-on-blue;
+    margin-bottom: 1em;
   }
 
   .devops--text {

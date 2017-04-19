@@ -78,17 +78,22 @@ h1, h2, h3, h4, h5, h6, p {
 
 %heading {
   font-weight: 700;
-  font-size: 2.2em;
+  font-size: 2.5em;
   line-height: 1.3;
   color: $blue;
 }
 
+%heading-shadow {
+  @extend %heading;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 %heading-yellow {
   color: $yellow-light;
-  font-size: 2em;
-  padding-bottom: 1em;
-  padding-top: 1em;
+  font-weight: $font-weight-secondary-semiheavy;
+  font-size: 2.5em;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
 }
 
 %thin-on-blue {
@@ -96,6 +101,9 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.2em;
   font-weight: $font-weight-secondary-light;
   color: $gray-light;
+  color: $off-white;
+  margin-top: .5em;
+  letter-spacing: 1px;
 
   @include breakpoint(600px) {
     font-size: 2.5em;

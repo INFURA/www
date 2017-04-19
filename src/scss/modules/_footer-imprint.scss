@@ -1,13 +1,14 @@
 .footer-imprint {
   display: flex;
+  padding-bottom: 0 !important;
 
   .footer-imprint--logo,
   .footer-imprint--consensys,
   .footer-imprint--logo {
-    padding: 1em;
+    width: 100px;
     >svg{
-      width: 100%;
       height: auto;
+      float: right;
     }
   }
 
@@ -24,11 +25,16 @@
   }
 
   .footer-imprint--logo {
-    width: 35em;
+    width: 30em;
     padding-left: 0;
   }
 
   .footer-imprint--text {
+    margin-left: 2em;
+    p {
+      font-size: 0.9em;
+      line-height: 1.5em;
+    }
   }
 
   .footer-imprint--consensys {

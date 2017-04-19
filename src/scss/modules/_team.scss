@@ -1,8 +1,17 @@
 .team {
   text-align: center;
+  color: $blue;
+  margin: 2em auto;
 
   >h3 {
-    @extend %heading;
+    @extend %heading-shadow;
+    margin-bottom: 1.5em;
+  }
+
+  h4 {
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 1.5em;
   }
 
   .team--list {
@@ -10,6 +19,11 @@
     padding: 0;
     li {
       display: inline-block;
+
+      p {
+        width: 65%;
+        margin: 5px auto;
+      }
     }
   }
 }
