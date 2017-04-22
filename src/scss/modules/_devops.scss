@@ -4,6 +4,7 @@
   @include clearfix();
 
   background: url(/assets/img/svg/bg-city.svg);
+  background-opacity: .2;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 400px;
@@ -26,6 +27,8 @@
   }
 
   .devops--text {
+    padding-left: 3%;
+    padding-right: 3%;
     @include breakpoint(480px) {
       width: 50%;
       float: right;

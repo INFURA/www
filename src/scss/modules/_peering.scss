@@ -30,7 +30,8 @@
   @include breakpoint(600px) {
 
     .peering--info {
-      width: 50%
+      width: 50%;
+      padding: 3% 0;
     }
     .peering--image {
       display: block;

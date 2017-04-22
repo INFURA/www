@@ -3,6 +3,8 @@
 
   > h3 {
     @extend %heading-shadow;
+    padding-top: 1em;
+    padding-bottom: 1em;
 
     @include breakpoint(480px) {
       display: inline-block;
@@ -17,8 +19,7 @@
     text-align: left;
     padding: 0;
     list-style-type: none;
-    padding-bottom: 1em;
-
+    padding-bottom: 2em;
 
     @include breakpoint(480px) {
       margin-top: 2em;
@@ -45,7 +46,7 @@
       }
 
       .features--txt {
-        padding-bottom: 2em;
+        padding-bottom: 1em;
         > strong {
           display: block;
           color: $blue;
