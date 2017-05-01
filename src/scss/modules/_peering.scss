@@ -2,6 +2,8 @@
   display: flex;
   color: $white;
   position: relative;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
 
   h2 {
     @extend %heading-yellow;
@@ -31,6 +33,7 @@
 
     .peering--info {
       width: 50%;
+      margin-left: 0;
       padding: 3% 0;
     }
     .peering--image {
