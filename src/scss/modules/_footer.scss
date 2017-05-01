@@ -9,11 +9,15 @@
   padding-top: 1.6%;
   .container {
     .footer-menu {
-      padding: 1em;
-      float: right;
+      padding: 1em 0;
+      width: 100%;
+
+      @include breakpoint(400px) {
+        width: 50%;
+        float: right;
+      }
     }
   }
-
 
 
   .footer-menu {
@@ -21,12 +25,17 @@
     .footer-menu--heading {
       color: $yellow-light;
       text-transform: uppercase;
-      font-size: 1em;
+      font-size: 1.2em;
+      font-weight: bold;
     }
 
     ul {
       list-style-type: none;
       padding: 0;
+    }
+
+    li {
+      line-height: 1.8em;
     }
 
     li,
