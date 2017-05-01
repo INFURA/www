@@ -1,3 +1,8 @@
+.yellow-heading-simple {
+  @extend %heading-yellow;
+  text-align: center;
+}
+
 .yellow-heading {
   $height: 2.15em;
   &.container-fluid {

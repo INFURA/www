@@ -1,15 +1,13 @@
 .footer {
 
+  background: url('/assets/img/svg/bg-bridge.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  background-position: left bottom;
+
   padding-top: 1.6%;
   .container {
-
-
-    background: url('/assets/img/svg/bg-bridge.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 400px;
-    background-position: left bottom;
-
     .footer-menu {
       padding: 1em;
       float: right;

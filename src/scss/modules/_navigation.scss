@@ -18,6 +18,11 @@
         font-weight: $font-weight-light;
         letter-spacing: 2px;
         font-size: 0.8em;
+
+        @include breakpoint(600px) {
+          padding-right: 2em;
+          padding-left: 2em;
+        }
       }
 
       &.is-active,
