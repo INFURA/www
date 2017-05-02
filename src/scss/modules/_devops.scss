@@ -27,8 +27,8 @@
   }
 
   .devops--text {
-    padding-left: 3%;
-    padding-right: 3%;
+    //padding-left: 3%;
+    //padding-right: 3%;
     @include breakpoint(480px) {
       width: 50%;
       float: right;

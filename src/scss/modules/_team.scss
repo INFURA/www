@@ -33,6 +33,7 @@
   @extend .bg-team;
   border-radius: 50%;
   margin: 0 auto;
+  box-shadow: 2px 2px 2px #888;
 
   &.team--img-galano {
     @include sprite($team-galano, 'inline-block');

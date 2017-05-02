@@ -7,7 +7,7 @@
 
   .header--logo {
     //width: 55%;
-    margin: 4em auto 0;
+    margin: 2em auto 0;
     //.header--logo--svg {}
   }
 
@@ -40,7 +40,7 @@
     }
 
     .btn.btn-lg {
-      margin: 1em 0 3em;
+      margin: 1em 0 1em;
       color: $blue;
       border-radius: 2em;
       text-transform: uppercase;
@@ -53,6 +53,38 @@
         background-color: $cyan;
         border-color: $cyan;
         color: $white;
+      }
+    }
+
+    .grid-4 .col {
+      min-width: 10em;
+      width: 50%;
+      @include breakpoint(677px) {
+        width: 25%;
+      }
+    }
+
+    .branding-stats {
+      ul {
+        list-style-type: none;
+      }
+
+      .stats-header {
+        color: $cyan;
+        white-space: nowrap;
+        font-size: 2em;
+
+        @include breakpoint(900px) {
+          font-size: 3em;
+        }
+      }
+
+      .stats-label {
+        text-transform: uppercase;
+        color: $white;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 0.8em;
       }
     }
   }

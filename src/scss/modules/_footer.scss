@@ -12,8 +12,8 @@
       padding: 1em 0;
       width: 100%;
 
-      @include breakpoint(400px) {
-        width: 50%;
+      @include breakpoint(760px) {
+        width: 55%;
         float: right;
       }
     }
@@ -29,18 +29,45 @@
       font-weight: bold;
     }
 
+    .grid-3--content .col.footer-menu--col {
+      padding-left: 1em;
+
+      @include breakpoint(600px) {
+
+        padding: 0 0 0 3em;
+
+        &:first-of-type {
+          padding-left: 0;
+        }
+      }
+    }
+
     ul {
       list-style-type: none;
       padding: 0;
     }
 
     li {
-      line-height: 1.8em;
+      line-height: 2em;
+      white-space: nowrap;
+      font-weight: 100;
     }
 
     li,
     a {
       color: $blue-lighter;
+    }
+
+    li:hover>a {
+      color: $cyan;
+      text-decoration: none;
+    }
+    li:hover {
+      color: $cyan;
+    }
+
+    i.fa {
+      margin-right: 5px;
     }
   }
 

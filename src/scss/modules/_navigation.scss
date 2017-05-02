@@ -19,6 +19,10 @@
         letter-spacing: 2px;
         font-size: 0.8em;
 
+        &.twitter {
+          color: $gray-light;
+        }
+
         @include breakpoint(600px) {
           padding-right: 2em;
           padding-left: 2em;
@@ -30,6 +34,7 @@
         border-bottom-color: $cyan;
         >a {
           text-decoration: none;
+          color: $cyan;
         }
       }
 
