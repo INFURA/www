@@ -3,7 +3,7 @@
   position: relative;
   @include clearfix();
 
-  background: url(/assets/img/svg/bg-city.svg);
+  background: url('../img/svg/bg-city.svg');
   background-opacity: .2;
   background-size: cover;
   background-repeat: no-repeat;
