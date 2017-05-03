@@ -1049,7 +1049,7 @@ h3, .h3 {
   h1.heavy, .h1.heavy,
   h2.heavy, .h2.heavy,
   h3.heavy, .h3.heavy {
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1px; }
 
 h4, .h4,
@@ -1103,7 +1103,7 @@ p > .sup {
   font-size: .4em; }
 
 .features > h3, .adopters > h3, .team > h3 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2.5em;
   line-height: 1.3;
   color: #3c5596; }
@@ -1113,7 +1113,7 @@ p > .sup {
 
 .yellow-heading-simple, .decentralisation .decentralisation--text p.decentralisation--gateway, .peering h2, .devops h3 {
   color: #efdf77;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2.5em;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
   letter-spacing: 1px; }
@@ -1265,7 +1265,8 @@ p > .sup {
   max-height: 7em; }
 
 .yellow-heading-simple {
-  text-align: center; }
+  text-align: center;
+  font-weight: 100; }
 
 .yellow-heading.container-fluid {
   padding: 0; }
@@ -1279,7 +1280,7 @@ p > .sup {
   padding-right: 3%; }
   .yellow-heading .container h2 {
     padding-top: 0;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1px; }
     @media (min-width: 500px) {
       .yellow-heading .container h2 {
@@ -1369,7 +1370,7 @@ p > .sup {
       .features .features--list .feature--item .features--txt > strong {
         display: block;
         color: #3c5596;
-        font-weight: 700;
+        font-weight: 600;
         font-size: 1.1em; }
       .features .features--list .feature--item .features--txt > p {
         margin-top: .3em;
@@ -1509,7 +1510,7 @@ p > .sup {
     margin-top: 1em; }
   .devops h4 {
     margin-bottom: 1em; }
-  @media (min-width: 800px) {
+  @media (min-width: 480px) {
     .devops .devops--text {
       width: 50%;
       float: right;
@@ -1712,11 +1713,6 @@ p > .sup {
         margin-right: 1em;
         width: 20% !important;
         margin-bottom: 0; } }
-  .footer-imprint .grid-3 .grid-3--content {
-    min-width: 100%; }
-    @media (min-width: 600px) {
-      .footer-imprint .grid-3 .grid-3--content {
-        min-width: null; } }
   .footer-imprint .footer-imprint--text {
     margin-left: 1em; }
     @media (min-width: 600px) {
