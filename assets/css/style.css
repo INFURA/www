@@ -1740,6 +1740,9 @@ p > .sup {
       .footer-imprint .footer-imprint--consensys {
         width: 10% !important; } }
 
+a {
+  cursor: pointer; }
+
 .container-fluid {
   padding: 0 3%; }
 
