@@ -1138,27 +1138,27 @@ p > .sup {
   padding-bottom: 1em; }
 
 .bg-features, .features--img {
-  background-image: url("/assets/img/sprite-features.jpg"); }
+  background-image: url("../img/sprite-features.jpg"); }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .bg-features, .features--img {
-    background-image: url("/assets/img/sprite-features@2x.jpg");
+    background-image: url("../img/sprite-features@2x.jpg");
     background-size: 75px 450px; } }
 
 .bg-logos, .adopters--img {
-  background-image: url("/assets/img/sprite-logos.jpg"); }
+  background-image: url("../img/sprite-logos.jpg"); }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .bg-logos, .adopters--img {
-    background-image: url("/assets/img/sprite-logos@2x.jpg");
+    background-image: url("../img/sprite-logos@2x.jpg");
     background-size: 75px 600px; } }
 
 .bg-team, .team--img {
-  background-image: url("/assets/img/sprite-team.jpg"); }
+  background-image: url("../img/sprite-team.jpg"); }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .bg-team, .team--img {
-    background-image: url("/assets/img/sprite-team@2x.jpg");
+    background-image: url("../img/sprite-team@2x.jpg");
     background-size: 100px 400px; } }
 
 .godzilla, .header .header--branding {
@@ -1436,7 +1436,7 @@ p > .sup {
     width: 100%;
     height: 165px;
     opacity: 0.30;
-    background: url("/assets/img/svg/bg-cityscape.svg");
+    background: url("../img/svg/bg-cityscape.svg");
     background-repeat: no-repeat;
     background-size: cover; }
   .decentralisation .decentralisation--text {
@@ -1471,7 +1471,7 @@ p > .sup {
   .peering h2 {
     padding-bottom: 1em; }
   .peering .peering--image {
-    background: url("/assets/img/svg/bg-radiotower-globe.svg");
+    background: url("../img/svg/bg-radiotower-globe.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     display: none; }
@@ -1494,7 +1494,7 @@ p > .sup {
 .devops {
   color: #fff;
   position: relative;
-  background: url(/assets/img/svg/bg-city.svg);
+  background: url("../img/svg/bg-city.svg");
   background-opacity: .2;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1643,7 +1643,7 @@ p > .sup {
     height: 100px; }
 
 .footer {
-  background: url("/assets/img/svg/bg-bridge.svg");
+  background: url("../img/svg/bg-bridge.svg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 400px;
@@ -1701,7 +1701,7 @@ p > .sup {
       float: right; }
   .footer-imprint .footer-imprint--logo {
     display: block;
-    background-image: url("/assets/img/svg/infura-logo-footer.svg");
+    background-image: url("../img/svg/infura-logo-footer.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
@@ -1723,7 +1723,7 @@ p > .sup {
       line-height: 1.5em; }
   .footer-imprint .footer-imprint--consensys {
     height: 4em;
-    background-image: url("/assets/img/svg/consensys-logo.svg");
+    background-image: url("../img/svg/consensys-logo.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     padding: 0 !important; }
