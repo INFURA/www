@@ -59,6 +59,12 @@
           color: $gray;
           line-height: 1.6em;
         }
+
+        display: inline-block;
+
+        @include breakpoint(480px) {
+          display: block;
+        }
       }
 
     }

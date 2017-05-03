@@ -29,10 +29,11 @@
   .devops--text {
     //padding-left: 3%;
     //padding-right: 3%;
+    padding: 1em 3% 1.5em;
     @include breakpoint(480px) {
-      width: 40%;
+      width: 45%;
       float: right;
-      margin-right: 10%;
+      margin-right: 5%;
     }
   }
 }
