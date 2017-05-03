@@ -3,8 +3,8 @@
 
   > h3 {
     @extend %heading-shadow;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
 
     @include breakpoint(480px) {
       display: inline-block;
