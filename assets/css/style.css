@@ -1366,7 +1366,8 @@ p > .sup {
       margin-bottom: 2em;
       margin-right: 2em; }
     .features .features--list .feature--item .features--txt {
-      padding-bottom: 1em; }
+      padding-bottom: 1em;
+      display: inline-block; }
       .features .features--list .feature--item .features--txt > strong {
         display: block;
         color: #3c5596;
@@ -1377,6 +1378,9 @@ p > .sup {
         max-width: 75%;
         color: #5c606a;
         line-height: 1.6em; }
+      @media (min-width: 480px) {
+        .features .features--list .feature--item .features--txt {
+          display: block; } }
 
 .features--img.features--img-api {
   background-position: 0px 0px;
@@ -1512,11 +1516,13 @@ p > .sup {
     margin-top: 1em; }
   .devops h4 {
     margin-bottom: 1em; }
-  @media (min-width: 480px) {
-    .devops .devops--text {
-      width: 50%;
-      float: right;
-      margin-right: 5%; } }
+  .devops .devops--text {
+    padding: 1em 3% 1.5em; }
+    @media (min-width: 480px) {
+      .devops .devops--text {
+        width: 45%;
+        float: right;
+        margin-right: 5%; } }
 
 .adopters {
   padding-top: 1em;
