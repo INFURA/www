@@ -1339,8 +1339,8 @@ p > .sup {
 .features {
   text-align: center; }
   .features > h3 {
-    padding-top: 1em;
-    padding-bottom: 1em; }
+    padding-top: .5em;
+    padding-bottom: .5em; }
     @media (min-width: 480px) {
       .features > h3 {
         display: inline-block;
@@ -1474,7 +1474,9 @@ p > .sup {
     background: url("../img/svg/bg-radiotower-globe.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    display: none; }
+    display: none;
+    padding: 0;
+    background-size: cover; }
   @media (min-width: 600px) {
     .peering .peering--info {
       width: 50%;
@@ -1517,6 +1519,7 @@ p > .sup {
       margin-right: 5%; } }
 
 .adopters {
+  padding-top: 1em;
   text-align: center; }
   .adopters .join {
     color: #31bdf7; }
