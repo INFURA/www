@@ -72,3 +72,17 @@
   }
 
 }
+
+footer.post-footer {
+  .attribution {
+    font-size: .75em;
+    background-color: $yellow-light;
+    color: $blue-mid;
+    text-align: center;
+    font-style: italic;
+
+    a {
+      color: $blue-mid;
+    }
+  }
+}
