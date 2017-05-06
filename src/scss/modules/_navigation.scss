@@ -19,8 +19,11 @@
         letter-spacing: 2px;
         font-size: 0.8em;
 
-        &.twitter {
-          color: $gray-light;
+        &.twitter > .svg-icon {
+          fill: $blue-lighter;
+          height: 1.4em;
+          vertical-align: bottom;
+          width: 1.3em;
         }
 
         @include breakpoint(600px) {
