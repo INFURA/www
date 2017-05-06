@@ -5,38 +5,25 @@
     margin: 0 auto;
     display: block;
 */
-    background: url('../img/full/diagram-infura.png') no-repeat center center;
+    background: url('../img/full/diagram-infura.png') no-repeat;
     background-size: auto 300px;
-    height: 500px;
-    padding-top: 0 !important;
+    background-position: center 90%;
+    height: 260px;
+
+    @include breakpoint(600px) {
+      background-size: auto 400px;
+      height: 350px;
+    }
+
+    @include breakpoint(700px) {
+      background-size: auto 500px;
+      height: 420px;
+    }
 
     @include breakpoint(850px) {
       background-size: auto 565px;
-    }
-
-    @media (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi) {
-        /* Retina-specific stuff here */
-        background: url('../img/full/diagram-infura.png') no-repeat;
-        background-size: auto 300px;
-        background-position: center 90%;
-        height: 260px;
-
-         @include breakpoint(600px) {
-          background-size: auto 400px;
-          height: 350px;
-        }
-
-        @include breakpoint(700px) {
-          background-size: auto 500px;
-          height: 420px;
-        }
-
-        @include breakpoint(850px) {
-          background-size: auto 565px;
-          background-position: center 70%;
-          height: 450px;
-        }
+      background-position: center 70%;
+      height: 450px;
     }
 
 }
