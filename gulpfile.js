@@ -98,7 +98,7 @@ gulp.task('sprites', function () {
       {ratio: 2, dpi: 192}
     ]
   })
-  .pipe(gulpif('*.jpg', gulp.dest('app/assets/img'), gulp.dest('src/scss/base')))
+  .pipe(gulpif('*.{png,jpg}', gulp.dest('app/assets/img'), gulp.dest('src/scss/base')))
   .pipe(browserSync.reload({stream:true, once: true}));
 });
 
@@ -119,6 +119,10 @@ gulp.task('svg', function() {
   return runSequence('svg-min', 'html');
 });
 
+gulp.task('img-copy', function() {
+  return gulp.src('src/img/full/*.{png,jpg}')
+    .pipe(gulp.dest('app/assets/img/full/'));
+});
 
 gulp.task('browser-sync', function() {
     browserSync.init(null, {
@@ -136,6 +140,7 @@ gulp.task('default', function () {
     runSequence(['svg-min'], ['html', 'css', 'js', 'browser-sync']);
     gulp.watch("src/scss/**/*.scss", ['css']);
     gulp.watch("./src/img/sprites/**/*.{png,jpg}", ['sprites']);
+    gulp.watch("./src/img/full/*.{png,jpg}", ['img-copy']);
     gulp.watch("src/js/*.js", ['js']);
     gulp.watch("src/*.html", ['html']);
     gulp.watch("src/img/svg/*.svg", ['svg']);
