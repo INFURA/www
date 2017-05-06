@@ -1,86 +1,73 @@
-$features-api: 0px 0px 75px 75px;
-$features-ferryman: 0px -75px 75px 75px;
-$features-ipfs: 0px -150px 75px 75px;
-$features-multiclient: 0px -225px 75px 75px;
-$features-private: 0px -300px 75px 75px;
-$features-tls: 0px -375px 75px 75px;
-$logos-benefactory: 0px 0px 75px 75px;
-$logos-btcrelay: 0px -75px 75px 75px;
-$logos-metamask: 0px -150px 75px 75px;
-$logos-regis: 0px -225px 75px 75px;
-$logos-singular: 0px -300px 75px 75px;
-$logos-truffle: 0px -375px 75px 75px;
-$logos-ujo: 0px -450px 75px 75px;
-$logos-uport: 0px -525px 75px 75px;
-$team-galano: 0px 0px 100px 100px;
-$team-junge: 0px -100px 100px 100px;
-$team-pietrzak: 0px -200px 100px 100px;
-$team-wuehler: 0px -300px 100px 100px;
-
+$logos-benefactory: -0px -0px 75px 75px;
+$logos-btcrelay: -0px -75px 75px 75px;
+$logos-metamask: -0px -150px 75px 75px;
+$logos-regis: -0px -225px 75px 75px;
+$logos-singular: -0px -300px 75px 75px;
+$logos-truffle: -0px -375px 75px 75px;
+$logos-ujo: -0px -450px 75px 75px;
+$logos-uport: -0px -525px 75px 75px;
+$features-api: -0px -0px 75px 75px;
+$features-ferryman: -0px -75px 75px 75px;
+$features-ipfs: -0px -150px 75px 75px;
+$features-multiclient: -0px -225px 75px 75px;
+$features-private: -0px -300px 75px 75px;
+$features-tls: -0px -375px 75px 75px;
+$team-galano: -0px -0px 100px 100px;
+$team-junge: -0px -100px 100px 100px;
+$team-pietrzak: -0px -200px 100px 100px;
+$team-wuehler: -0px -300px 100px 100px;
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }
-
 @mixin sprite-height($sprite) {
   height: nth($sprite, 4);
 }
-
 @function sprite-width($sprite) {
-  @return nth($sprite, 3);
+   @return nth($sprite, 3);
 }
-
 @function sprite-height($sprite) {
-  @return nth($sprite, 4);
+   @return nth($sprite, 4);
 }
-
 @mixin sprite-position($sprite) {
   $sprite-offset-x: nth($sprite, 1);
   $sprite-offset-y: nth($sprite, 2);
-
   background-position: $sprite-offset-x $sprite-offset-y;
 }
-
 @mixin sprite($sprite, $display: block) {
-  @include sprite-position($sprite);
-
+   @include sprite-position($sprite);
   background-repeat: no-repeat;
   overflow: hidden;
   display: $display;
-
   @include sprite-width($sprite);
-
   @include sprite-height($sprite);
 }
 
-.bg-features {
-  background-image: url("../img/sprite-features.jpg");
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .bg-features {
-    background-image: url("../img/sprite-features@2x.jpg");
-    background-size: 75px 450px;
-  }
-}
-
 .bg-logos {
-  background-image: url("../img/sprite-logos.jpg");
+  background-image: url('/assets/img/sprite-logos.jpg');
 }
-
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .bg-logos {
-    background-image: url("../img/sprite-logos@2x.jpg");
+    background-image: url('/assets/img/sprite-logos@2x.jpg');
     background-size: 75px 600px;
   }
 }
 
-.bg-team {
-  background-image: url("../img/sprite-team.jpg");
+.bg-features {
+  background-image: url('/assets/img/sprite-features.jpg');
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .bg-features {
+    background-image: url('/assets/img/sprite-features@2x.jpg');
+    background-size: 75px 450px;
+  }
 }
 
+.bg-team {
+  background-image: url('/assets/img/sprite-team.jpg');
+}
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .bg-team {
-    background-image: url("../img/sprite-team@2x.jpg");
+    background-image: url('/assets/img/sprite-team@2x.jpg');
     background-size: 100px 400px;
   }
 }

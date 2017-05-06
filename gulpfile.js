@@ -137,12 +137,11 @@ gulp.task('bs-reload', function () {
 });
 
 gulp.task('default', function () {
-    runSequence(['svg-min'], ['html', 'css', 'js', 'browser-sync']);
+    runSequence(['svg-min'], ['sprites', 'img-copy', 'html', 'css', 'js', 'browser-sync']);
     gulp.watch("src/scss/**/*.scss", ['css']);
-    gulp.watch("./src/img/sprites/**/*.{png,jpg}", ['sprites']);
-    gulp.watch("./src/img/full/*.{png,jpg}", ['img-copy']);
+    gulp.watch("src/img/sprites/**/*.{png,jpg}", ['sprites']);
+    gulp.watch("src/img/full/*.{png,jpg}", ['img-copy']);
     gulp.watch("src/js/*.js", ['js']);
     gulp.watch("src/*.html", ['html']);
     gulp.watch("src/img/svg/*.svg", ['svg']);
-
 });
