@@ -1137,28 +1137,28 @@ p > .sup {
 .linespace {
   padding-bottom: 1em; }
 
-.bg-features, .features--img {
-  background-image: url("../img/sprite-features.jpg"); }
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .bg-features, .features--img {
-    background-image: url("../img/sprite-features@2x.jpg");
-    background-size: 75px 450px; } }
-
 .bg-logos, .adopters--img {
-  background-image: url("../img/sprite-logos.jpg"); }
+  background-image: url("/assets/img/sprite-logos.jpg"); }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .bg-logos, .adopters--img {
-    background-image: url("../img/sprite-logos@2x.jpg");
+    background-image: url("/assets/img/sprite-logos@2x.jpg");
     background-size: 75px 600px; } }
 
+.bg-features, .features--img {
+  background-image: url("/assets/img/sprite-features.jpg"); }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .bg-features, .features--img {
+    background-image: url("/assets/img/sprite-features@2x.jpg");
+    background-size: 75px 450px; } }
+
 .bg-team, .team--img {
-  background-image: url("../img/sprite-team.jpg"); }
+  background-image: url("/assets/img/sprite-team.jpg"); }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .bg-team, .team--img {
-    background-image: url("../img/sprite-team@2x.jpg");
+    background-image: url("/assets/img/sprite-team@2x.jpg");
     background-size: 100px 400px; } }
 
 .godzilla, .header .header--branding {
@@ -1254,7 +1254,8 @@ p > .sup {
       vertical-align: middle;
       padding: 0;
       margin: 1em 0 0 0;
-      display: inline-block; }
+      display: inline-block;
+      text-shadow: #cccccc 0px 1px 1px; }
   .services .services--item p {
     margin-top: 1em;
     line-height: 1.8em; }
@@ -1325,8 +1326,11 @@ p > .sup {
       font-weight: 300;
       letter-spacing: 2px;
       font-size: 0.8em; }
-      .navigation .nav--list .nav--list-item > a.twitter {
-        color: #b9c0d5; }
+      .navigation .nav--list .nav--list-item > a.twitter > .svg-icon {
+        fill: #e9effd;
+        height: 1.4em;
+        vertical-align: bottom;
+        width: 1.3em; }
       @media (min-width: 600px) {
         .navigation .nav--list .nav--list-item > a {
           padding-right: 2em;
@@ -1499,29 +1503,19 @@ p > .sup {
     margin: 0 auto;
     display: block;
 */
-  background: url("../img/full/diagram-infura.png") no-repeat center center;
+  background: url("../img/full/diagram-infura.png") no-repeat;
   background-size: auto 300px;
-  height: 500px;
-  padding-top: 0 !important; }
-  @media (min-width: 850px) {
-    .container.architecture {
-      background-size: auto 565px; } }
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .container.architecture {
-      /* Retina-specific stuff here */
-      background: url("../img/full/diagram-infura.png") no-repeat;
-      background-size: auto 300px;
-      background-position: center 90%;
-      height: 260px; } }
-  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px), (min-resolution: 192dpi) and (min-width: 600px) {
+  background-position: center 90%;
+  height: 260px; }
+  @media (min-width: 600px) {
     .container.architecture {
       background-size: auto 400px;
       height: 350px; } }
-  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 700px), (min-resolution: 192dpi) and (min-width: 700px) {
+  @media (min-width: 700px) {
     .container.architecture {
       background-size: auto 500px;
       height: 420px; } }
-  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 850px), (min-resolution: 192dpi) and (min-width: 850px) {
+  @media (min-width: 850px) {
     .container.architecture {
       background-size: auto 565px;
       background-position: center 70%;
@@ -1769,15 +1763,23 @@ footer.post-footer .attribution {
     .footer-imprint .footer-imprint--text p {
       font-size: 0.9em;
       line-height: 1.5em; }
-  .footer-imprint .footer-imprint--consensys {
+  .footer-imprint a.footer-imprint--consensys {
     height: 4em;
     background-image: url("../img/svg/consensys-logo.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     padding: 0 !important; }
     @media (min-width: 600px) {
-      .footer-imprint .footer-imprint--consensys {
+      .footer-imprint a.footer-imprint--consensys {
         width: 10% !important; } }
+
+.svg-icon {
+  display: inline-block;
+  margin-right: 5px;
+  height: 1.15em;
+  fill: #e9effd;
+  vertical-align: text-bottom;
+  width: 1em; }
 
 a {
   cursor: pointer; }
