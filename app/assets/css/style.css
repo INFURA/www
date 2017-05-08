@@ -1137,14 +1137,6 @@ p > .sup {
 .linespace {
   padding-bottom: 1em; }
 
-.bg-logos, .adopters--img {
-  background-image: url("/assets/img/sprite-logos.jpg"); }
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .bg-logos, .adopters--img {
-    background-image: url("/assets/img/sprite-logos@2x.jpg");
-    background-size: 75px 600px; } }
-
 .bg-features, .features--img {
   background-image: url("/assets/img/sprite-features.jpg"); }
 
@@ -1152,6 +1144,14 @@ p > .sup {
   .bg-features, .features--img {
     background-image: url("/assets/img/sprite-features@2x.jpg");
     background-size: 75px 450px; } }
+
+.bg-logos, .adopters--img {
+  background-image: url("/assets/img/sprite-logos.jpg"); }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .bg-logos, .adopters--img {
+    background-image: url("/assets/img/sprite-logos@2x.jpg");
+    background-size: 75px 600px; } }
 
 .bg-team, .team--img {
   background-image: url("/assets/img/sprite-team.jpg"); }
@@ -1763,14 +1763,14 @@ footer.post-footer .attribution {
     .footer-imprint .footer-imprint--text p {
       font-size: 0.9em;
       line-height: 1.5em; }
-  .footer-imprint .footer-imprint--consensys {
+  .footer-imprint a.footer-imprint--consensys {
     height: 4em;
     background-image: url("../img/svg/consensys-logo.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     padding: 0 !important; }
     @media (min-width: 600px) {
-      .footer-imprint .footer-imprint--consensys {
+      .footer-imprint a.footer-imprint--consensys {
         width: 10% !important; } }
 
 .svg-icon {
