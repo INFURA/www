@@ -89,7 +89,7 @@ gulp.task('sprites', function () {
     engine: 'sprity-gm',
     style: '_sprites.scss',
     prefix: 'bg',
-    cssPath: 'assets/img',
+    cssPath: '../img',
     split: true,
     margin: 0,
     format: 'jpg',

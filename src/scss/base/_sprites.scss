@@ -43,31 +43,31 @@ $team-wuehler: -0px -300px 100px 100px;
 }
 
 .bg-features {
-  background-image: url('assets/img/sprite-features.jpg');
+  background-image: url('../img/sprite-features.jpg');
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .bg-features {
-    background-image: url('assets/img/sprite-features@2x.jpg');
+    background-image: url('../img/sprite-features@2x.jpg');
     background-size: 75px 450px;
   }
 }
 
 .bg-logos {
-  background-image: url('assets/img/sprite-logos.jpg');
+  background-image: url('../img/sprite-logos.jpg');
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .bg-logos {
-    background-image: url('assets/img/sprite-logos@2x.jpg');
+    background-image: url('../img/sprite-logos@2x.jpg');
     background-size: 75px 600px;
   }
 }
 
 .bg-team {
-  background-image: url('assets/img/sprite-team.jpg');
+  background-image: url('../img/sprite-team.jpg');
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .bg-team {
-    background-image: url('assets/img/sprite-team@2x.jpg');
+    background-image: url('../img/sprite-team@2x.jpg');
     background-size: 100px 400px;
   }
 }
