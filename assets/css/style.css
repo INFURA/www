@@ -1182,6 +1182,19 @@ p > .sup {
 
 .header .header--logo {
   margin: 2em auto 0; }
+  .header .header--logo .logo {
+    display: block; }
+    .lang-ch .header .header--logo .logo,
+    .lang-tr-ch .header .header--logo .logo {
+      display: none; }
+  .header .header--logo .logo-chinese {
+    display: none; }
+    .lang-ch .header .header--logo .logo-chinese {
+      display: block; }
+  .header .header--logo .logo-trad-chinese {
+    display: none; }
+    .lang-tr-ch .header .header--logo .logo-trad-chinese {
+      display: block; }
 
 .header .header--branding {
   text-align: center;
@@ -1190,6 +1203,24 @@ p > .sup {
   margin-top: 2em;
   margin-bottom: 1em;
   background-position: 95% top; }
+  .header .header--branding.registration {
+    background-image: none;
+    text-align: center;
+    background-size: contain;
+    min-height: 100px;
+    margin-top: 0;
+    margin-bottom: 1em;
+    background-position: 95% top; }
+    .header .header--branding.registration .header--logo {
+      margin: 0 auto; }
+      .header .header--branding.registration .header--logo svg {
+        height: 100px; }
+    .header .header--branding.registration h1 {
+      text-align: left;
+      font-size: 1.5em;
+      margin-left: 10px;
+      padding-top: 10px;
+      letter-spacing: 1px; }
   .header .header--branding > h1 {
     color: #fff;
     font-size: 3.2em;
@@ -1721,12 +1752,12 @@ p > .sup {
 
 footer.post-footer .attribution {
   font-size: .75em;
-  background-color: #efdf77;
-  color: #6378ab;
+  background-color: #3c5596;
+  color: #7289c6;
   text-align: center;
   font-style: italic; }
   footer.post-footer .attribution a {
-    color: #6378ab; }
+    color: #a5b1cf; }
 
 .footer-imprint {
   display: -ms-flexbox;
