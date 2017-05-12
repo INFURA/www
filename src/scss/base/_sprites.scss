@@ -4,6 +4,10 @@ $features-ipfs: -0px -150px 75px 75px;
 $features-multiclient: -0px -225px 75px 75px;
 $features-private: -0px -300px 75px 75px;
 $features-tls: -0px -375px 75px 75px;
+$team-galano: -0px -0px 100px 100px;
+$team-junge: -0px -100px 100px 100px;
+$team-pietrzak: -0px -200px 100px 100px;
+$team-wuehler: -0px -300px 100px 100px;
 $logos-benefactory: -0px -0px 75px 75px;
 $logos-btcrelay: -0px -75px 75px 75px;
 $logos-metamask: -0px -150px 75px 75px;
@@ -12,10 +16,6 @@ $logos-singular: -0px -300px 75px 75px;
 $logos-truffle: -0px -375px 75px 75px;
 $logos-ujo: -0px -450px 75px 75px;
 $logos-uport: -0px -525px 75px 75px;
-$team-galano: -0px -0px 100px 100px;
-$team-junge: -0px -100px 100px 100px;
-$team-pietrzak: -0px -200px 100px 100px;
-$team-wuehler: -0px -300px 100px 100px;
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }
@@ -52,16 +52,6 @@ $team-wuehler: -0px -300px 100px 100px;
   }
 }
 
-.bg-logos {
-  background-image: url('../img/sprite-logos.jpg');
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .bg-logos {
-    background-image: url('../img/sprite-logos@2x.jpg');
-    background-size: 75px 600px;
-  }
-}
-
 .bg-team {
   background-image: url('../img/sprite-team.jpg');
 }
@@ -69,5 +59,15 @@ $team-wuehler: -0px -300px 100px 100px;
   .bg-team {
     background-image: url('../img/sprite-team@2x.jpg');
     background-size: 100px 400px;
+  }
+}
+
+.bg-logos {
+  background-image: url('../img/sprite-logos.jpg');
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .bg-logos {
+    background-image: url('../img/sprite-logos@2x.jpg');
+    background-size: 75px 600px;
   }
 }
