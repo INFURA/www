@@ -1182,6 +1182,25 @@ p > .sup {
 
 .header .header--logo {
   margin: 2em auto 0; }
+  .header .header--logo .logo {
+    display: block; }
+    .lang-ch .header .header--logo .logo,
+    .lang-tr-ch .header .header--logo .logo {
+      display: none; }
+  .header .header--logo .logo-chinese {
+    display: none; }
+    .lang-ch .header .header--logo .logo-chinese {
+      display: block; }
+  .header .header--logo .logo-trad-chinese {
+    display: none; }
+    .lang-tr-ch .header .header--logo .logo-trad-chinese {
+      display: block; }
+  .header .header--logo .ch + logo {
+    display: none; }
+  .header .header--logo .logo-chinese:lang(zh) {
+    display: block; }
+  .header .header--logo .logo-trad-chinese:lang(en) {
+    display: none; }
 
 .header .header--branding {
   text-align: center;

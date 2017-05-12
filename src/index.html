@@ -23,7 +23,9 @@
 
       <div class="header--branding">
         <div class="header--logo">
-          <img src="app/assets/img/svg/infura-logo.svg" class="header--logo--svg svg--infura-logo">
+          <img src="app/assets/img/svg/infura-logo.svg" class="header--logo--svg svg--infura-logo logo">
+          <img src="app/assets/img/svg/infura-logo-chinese.svg" class="header--logo--svg svg--infura-logo logo-chinese">
+          <img src="app/assets/img/svg/infura-logo-trad-chinese.svg" class="header--logo--svg svg--infura-logo logo-trad-chinese">
         </div>
         <h1 class="light">
           Scalable Blockchain Infrastructure
@@ -422,6 +424,17 @@
      }
   </script>
   <script src="assets/js/scripts.min.js"></script>
+  <script>
+    // swap out japanese logos
+    var userLang = navigator.language || navigator.userLanguage;
+    if (userLang.includes('zh')) { // chinese
+        $('body').addClass("lang-ch");
+    }
+    if ((userLang.includes('zh-tw') || userLang.includes('zh-hk'))
+    || userLang.includes('ko')) { // must come after 'zh', taiwain, hk, korea
+        $('body').addClass("lang-tr-ch");
+    }
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
       <script>

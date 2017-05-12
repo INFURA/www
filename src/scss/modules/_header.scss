@@ -9,6 +9,30 @@
     //width: 55%;
     margin: 2em auto 0;
     //.header--logo--svg {}
+
+    .logo {
+      display: block;
+      .lang-ch &,
+      .lang-tr-ch & {
+        display: none;
+      }
+    }
+    .logo-chinese {
+      display: none;
+      .lang-ch & {
+        display: block;
+      }
+    }
+    .logo-trad-chinese {
+      display: none;
+      .lang-tr-ch & {
+        display: block;
+      }
+    }
+
+    .ch + logo { display: none; }
+    .logo-chinese:lang(zh) { display: block; }
+    .logo-trad-chinese:lang(en) { display: none; }
   }
 
   .header--branding {
