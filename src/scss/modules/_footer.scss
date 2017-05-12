@@ -74,15 +74,16 @@
 }
 
 footer.post-footer {
+
   .attribution {
     font-size: .75em;
-    background-color: $yellow-light;
-    color: $blue-mid;
+    background-color: $blue;
+    color: lighten($blue, 20%);
     text-align: center;
     font-style: italic;
 
     a {
-      color: $blue-mid;
+      color: lighten($blue-mid, 20%);
     }
   }
 }

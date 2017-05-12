@@ -29,10 +29,6 @@
         display: block;
       }
     }
-
-    .ch + logo { display: none; }
-    .logo-chinese:lang(zh) { display: block; }
-    .logo-trad-chinese:lang(en) { display: none; }
   }
 
   .header--branding {
@@ -43,6 +39,30 @@
     margin-top: 2em;
     margin-bottom: 1em;
     background-position: 95% top;
+
+    &.registration { // registration page
+      background-image: none;
+      text-align: center;
+      background-size: contain;
+      min-height: 100px;
+      margin-top: 0;
+      margin-bottom: 1em;
+      background-position: 95% top;
+
+      .header--logo {
+        margin: 0 auto;
+        svg {
+          height: 100px;
+        }
+      }
+      h1 {
+        text-align: left;
+        font-size: 1.5em;
+        margin-left: 10px;
+        padding-top: 10px;
+        letter-spacing: 1px;
+      }
+    }
 
     >h1 {
       color: $white;
@@ -78,6 +98,7 @@
         border-color: $cyan;
         color: $white;
       }
+
     }
 
     .grid-4 .col {

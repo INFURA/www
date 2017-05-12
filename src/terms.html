@@ -1,0 +1,506 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Scalable Blockchain Infrastructure - Ethereum API and IPFS web access</title>
+    <meta name="keywords" content="ethereum, blockchain api, api, ipfs, ethereum api, ipfs api, private ethereum, enterprise ethereum, decentralized, decentralised, dapp, decentralized app, decentralised app, serverless">
+    <meta name="description" content="Ethereum API and IPFS API for building Ethereum blockchain applications on a scalable cloud infrastructure with reliable transaction processing. Supports the original JSON-RPC API including the web3 and eth methods. The Ferryman service provides reverse proxy that filters, caches and re-routes requests, with throttling and logging. You can also use INFURA to broadcast signed raw transactions to the Ethereum blockchain.">
+
+    <!-- Open Graph Protocol - Facebook tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Scalable Ethereum API and IPFS access" />
+    <meta property="og:site_name" content="Infura" />
+    <meta property="og:description" content="Build blockchain applications building quickly using scalable and reliable Ethereum and IPFS API service endpoints" />
+    <meta property="og:url" content="https://infura.io/" />
+    <meta property="og:image" content="https://infura.io/assets/img/svg/infura-logo-footer.svg" />
+    <meta property="og:image:type" content="image/svg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Infura - Scalable Blockchain API for Ethereum and IPFS" />
+    <meta name="twitter:site" content="@infura_io" />
+    <meta name="twitter:creator" content="@infura_io" />
+    <meta name="twitter:url" content="https://infura.io/" />
+    <meta name="twitter:description" content="Building leading open-source tools and services for managing Microservices and APIs" />
+    <meta name="twitter:image" content="https://infura.io/assets/img/svg/infura-logo-footer.svg" />
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Infura",
+        "url": "https://infura.io/",
+        "logo": "https://infura.io/assets/img/svg/infura-logo-footer.svg",
+        "sameAs": [
+          "https://www.facebook.com/infuraio",
+          "https://twitter.com/infura_io",
+          "https://github.com/INFURA"
+        ]
+      }
+    </script>
+
+    <!-- Google Analytics -->
+    <link href="//www.google-analytics.com" rel="dns-prefetch">
+    <link href="//ajax.googleapis.com" rel="dns-prefetch">
+
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="assets/css/style.min.css" rel="stylesheet">
+  </head>
+
+<body>
+
+  <header class="container-fluid bg-gradient-blue-radial" role="banner">
+    <div class="container header">
+
+      <div class="header--branding registration">
+        <a class="header--logo" href="/">
+          <img src="app/assets/img/svg/infura-logo.svg" class="header--logo--svg svg--infura-logo logo">
+          <img src="app/assets/img/svg/infura-logo-chinese.svg" class="header--logo--svg svg--infura-logo logo-chinese">
+          <img src="app/assets/img/svg/infura-logo-trad-chinese.svg" class="header--logo--svg svg--infura-logo logo-trad-chinese">
+        </a>
+        <h1 class="light">
+          Scalable Blockchain Infrastructure
+        </h1>
+
+      </div>
+
+      <nav class="navigation" role="navigation">
+        <h3 class="visually-hidden">Main Navigation</h3>
+        <ul class="nav--list">
+          <li class="nav--list-item">
+            <a href="register.html">Get Started</a>
+          </li>
+          <li class="nav--list-item">
+            <a href="http://status.infura.io">Status</a>
+          </li>
+          <li class="nav--list-item">
+            <a href="docs/">Docs</a>
+          </li>
+          <li class="nav--list-item">
+            <a href="https://twitter.com/infura_io" class="twitter">
+              <img src="app/assets/img/svg/icon-twitter.svg" class="svg-icon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+
+    <div class="container-fluid yellow-heading">
+      <div class="yellow-heading--wrapper">
+        <div class="container">
+          <h2>Terms of Service</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-gradient-blue">
+      <div class="container">
+        <div class="col-lg-8 col-lg-offset-2">
+          <br>
+          <p>
+          PLEASE READ THESE TERMS OF SERVICE CAREFULLY.
+          <br>
+          <br>
+          BY ACCESSING OR USING OUR SERVICES, YOU AGREE TO BE BOUND BY THESE TERMS OF SERVICE
+          AND ALL TERMS INCORPORATED BY REFERENCE.
+          <br>
+          <br>
+          These Terms of Service and any terms expressly incorporated herein (“Terms”) apply
+          to your access to and use of all services (our “Services”) provided by INFURA and ConsenSys AG
+          (“Company,” “we,” or “us”).
+          <br>
+          <br>
+          1. ELIGIBILITY
+          <br>
+          <br>
+          You represent and warrant that you: (a) are of legal age to form a binding contract;
+          (b) have not previously been suspended or removed from using our Services; and (c)
+          have full power and authority to enter into this agreement and in doing so will
+          not violate any other agreement to which you are a party. If you are registering
+          to use the Services on behalf of a legal entity, you further represent and warrant
+          that (i) such legal entity is duly organized and validly existing under the applicable
+          laws of the jurisdiction of its organization, and (ii) you are duly authorized by
+          such legal entity to act on its behalf.
+          <br>
+          <br>
+          2. ACCOUNT REGISTRATION
+          <br>
+          <br>
+          Usage or access to our services may require an account consisting of a User ID and/or a
+          Password ("Account"). When
+          you create an Account, you agree to: (a) create a strong password that you do not
+          use for any other website or online service; (b) provide accurate and truthful information;
+          (c) maintain and promptly update your Account information; (d) maintain the security
+          of your Account by protecting your Account password and restricting access to your
+          computer and your Account; (e) promptly notify us if you discover or otherwise suspect
+          any security breaches related to your Account; and (f) take responsibility for all
+          activities that occur under your Account and accept all risks of any authorized
+          or unauthorized access to your Account, to the maximum extent permitted by law.
+          When you create an Account, we assign you an account identifier that you must retain
+          to access your Account.
+          <br>
+          <br>
+          3. DISCONTINUANCE OF SERVICES
+          <br>
+          <br>
+          We may, in our sole discretion and without liability to you, with or without
+          prior notice and at any time, modify or discontinue, temporarily or permanently,
+          any portion of our Services.
+          <br>
+          <br>
+          4. ASSUMPTION OF RISK
+          <br>
+          <br>
+          You acknowledge and agree that there are risks associated with utilizing an Internet-based
+          service including, but not limited to, the risk of failure of hardware, software
+          and Internet connections, the risk of malicious software introduction, and the risk
+          that third parties may obtain unauthorized access to information stored within your
+          Account. You acknowledge and agree that Company will not be responsible for any communication
+          failures, disruptions, errors, distortions or delays you may experience when using
+          the Services, however caused. Company takes no responsibility for and will not be
+          liable for any losses, damages or claims arising from the use of our Services, including,
+          but not limited to, any losses, damages or claims arising from (a) passwords being
+          "Bruteforced", (b) server failure or data loss, (c) forgotten passwords, (d) corrupted
+          wallet files, (e) incorrectly constructed transactions or mistyped Ethereum addresses;
+          or (f) unauthorized access to mobile applications, (g)"phishing," viruses, third-party
+          attacks or any other unauthorized third-party activities.
+          <br>
+          <br>
+          5. THIRD-PARTY SERVICES AND CONTENT
+          <br>
+          <br>
+          In using our Services, you may view content or utilize services provided by third
+          parties, including links to web pages and services of such parties (“Third-Party
+          Content”). We do not control, endorse or adopt any Third-Party Content and will
+          have no responsibility for Third-Party Content, including, without limitation, material
+          that may be misleading, incomplete, erroneous, offensive, indecent or otherwise
+          objectionable in your jurisdiction. In addition, your business dealings or correspondence
+          with such third parties are solely between you and the third parties. We are not
+          responsible or liable for any loss or damage of any sort incurred as the result
+          of any such dealings, and you understand that your use of Third-Party Content, and
+          your interactions with third parties, is at your own risk.
+          <br>
+          <br>
+          6. ACCEPTABLE USE
+          <br>
+          <br>
+          When accessing or using the Services, you agree that you will not violate any law,
+          contract, intellectual property or other third-party right or commit a tort, and
+          that you are solely responsible for your conduct while using our Services. Without
+          limiting the generality of the foregoing, you agree that you will not:
+          <br>
+          </p><ul>
+          <li>Use our Services in any manner that could interfere with, disrupt, negatively
+          affect or inhibit other users from fully enjoying our Services, or that could damage,
+          disable, overburden or impair the functioning of our Services in any manner;</li>
+          <li>Use our Services to pay for, support or otherwise engage in any illegal activities,
+          including, but not limited to illegal gambling, fraud, money-laundering, or terrorist
+          activities.</li>
+          <li>Use any robot, spider, crawler, scraper or other automated means or interface
+          not provided by us to access our Services or to extract data;</li>
+          <li>Use or attempt to use another user’s account without authorization;</li>
+          <li>Attempt to circumvent any content filtering techniques we employ, or attempt to
+          access any service or area of our Services that you are not authorized to access;</li>
+          <li>Introduce to the Services any virus, trojan worms, logic bombs or other harmful
+          material;</li>
+          <li>Develop any third-party applications that interact with our Services without our
+          prior written consent;</li>
+          <li>Provide false, inaccurate, or misleading information; and</li>
+          <li>Encourage or induce any third party to engage in any of the activities prohibited
+          under this Section.</li>
+          </ul>
+          7. COPYRIGHTS AND OTHER INTELLECTUAL PROPERTY RIGHTS
+          <br>
+          <br>
+          Unless otherwise indicated by us, all copyright and other intellectual property
+          rights in all content and other materials contained on our website or provided in
+          connection with the Services, including, without limitation, the Company or Company
+          logo and all designs, text, graphics, pictures, information, data, software, sound
+          files, other files and the selection and arrangement thereof (collectively, “Company
+          Materials”) are the proprietary property of Company or our licensors or suppliers
+          and are protected by copyright laws and other intellectual property rights laws.
+          We hereby grant you a limited, nonexclusive and non-sublicensable license to access
+          and use the Company Materials for your personal or internal business use. Such license
+          is subject to these Terms and does not permit (a) any resale of the Company Materials;
+          (b) the distribution, public performance or public display of any Company Materials;
+          (c) modifying or otherwise making any derivative uses of the Company Materials,
+          or any portion thereof; or (d) any use of the Company Materials other than for their
+          intended purposes. The license granted under this Section will automatically terminate
+          if we suspend or terminate your access to the Services.
+          <br>
+          <br>
+          8. TRADEMARKS
+          <br>
+          <br>
+          “INFURA” the Company logo, and any other Company product or service names, logos
+          or slogans that may appear on our Services are trademarks of Company and may not
+          be copied, imitated or used, in whole or in part, without our prior written permission.
+          You will not use any trademark, product or service name of Company without our prior
+          written permission, including without limitation any metatags or other “hidden text”
+          utilizing any trademark, product or service name of Company. In addition, the look
+          and feel of our Services, including all page headers, custom graphics, button icons
+          and scripts, is the service mark, trademark and/or trade dress of Company and may
+          not be copied, imitated or used, in whole or in part, without our prior written
+          permission. All other trademarks, registered trademarks, product names and company
+          names or logos mentioned through our Services are the property of their respective
+          owners. Reference to any products, services, processes or other information, by
+          name, trademark, manufacturer, supplier or otherwise does not constitute or imply
+          endorsement, sponsorship or recommendation by us.
+          <br>
+          <br>
+          9. SUSPENSION; TERMINATION
+          <br>
+          <br>
+          In the event of any Force Majeure Event, breach of these Terms, or any other
+          event that would make provision of the Services commercially unreasonable for
+          Company, we may, in our discretion and without liability to you, with or without
+          prior notice, suspend your access to all or a portion of our Services. We may
+          terminate your access to the Services in our sole discretion, immediately and
+          without prior notice, and delete or deactivate your Account and all related
+          information and files in such account without liability to you, including, for
+          instance, in the event that you breach any term of these Terms.
+          <br>
+          <br>
+          10. DISCLAIMER OF WARRANTIES
+          <br>
+          <br>
+          (a) TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE
+          LAW, AND EXCEPT AS EXPRESSLY PROVIDED TO THE CONTRARY IN A WRITING BY US, OUR SERVICES
+          ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS. TO THE MAXIMUM EXTENT PERMITTED
+          UNDER APPLICABLE LAW. WE EXPRESSLY DISCLAIM, AND YOU WAIVE, ALL WARRANTIES OF ANY
+          KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, IMPLIED WARRANTIES
+          OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT
+          AS TO OUR SERVICES, INCLUDING THE INFORMATION, CONTENT AND MATERIALS CONTAINED THEREIN.
+          <br><br>
+          (b) YOU ACKNOWLEDGE THAT INFORMATION YOU STORE OR TRANSFER THROUGH OUR SERVICES
+          MAY BECOME IRRETRIEVABLY LOST OR CORRUPTED OR TEMPORARILY UNAVAILABLE DUE TO A VARIETY
+          OF CAUSES, INCLUDING SOFTWARE FAILURES, PROTOCOL CHANGES BY THIRD PARTY PROVIDERS,
+          INTERNET OUTAGES, FORCE MAJEURE EVENT OR OTHER DISASTERS, SCHEDULED OR UNSCHEDULED
+          MAINTENANCE, OR OTHER CAUSES EITHER WITHIN OR OUTSIDE OUR CONTROL. YOU ARE SOLELY
+          RESPONSIBLE FOR BACKING UP AND MAINTAINING DUPLICATE COPIES OF ANY INFORMATION YOU
+          STORE OR TRANSFER THROUGH OUR SERVICES.
+          <br>
+          <br>
+          11. LIMITATION OF LIABILITY
+          <br>
+          <br>
+          EXCEPT AS OTHERWISE REQUIRED BY LAW, IN NO EVENT SHALL COMPANY, OUR DIRECTORS,
+          MEMBERS, EMPLOYEES OR AGENTS BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL
+          DAMAGES, OR ANY OTHER DAMAGES OF ANY KIND, INCLUDING BUT NOT LIMITED TO LOSS OF
+          USE, LOSS OF PROFITS OR LOSS OF DATA, WHETHER IN AN ACTION IN CONTRACT, TORT (INCLUDING
+          BUT NOT LIMITED TO NEGLIGENCE) OR OTHERWISE, ARISING OUT OF OR IN ANY WAY CONNECTED
+          WITH THE USE OF OR INABILITY TO USE OUR SERVICES OR THE COMPANY MATERIALS, INCLUDING
+          WITHOUT LIMITATION ANY DAMAGES CAUSED BY OR RESULTING FROM RELIANCE BY ANY USER
+          ON ANY INFORMATION OBTAINED FROM COMPANY, OR THAT RESULT FROM MISTAKES, OMISSIONS,
+          INTERRUPTIONS, DELETION OF FILES OR EMAIL, ERRORS, DEFECTS, VIRUSES, DELAYS IN OPERATION
+          OR TRANSMISSION OR ANY FAILURE OF PERFORMANCE, WHETHER OR NOT RESULTING FROM A FORCE
+          MAJEURE EVENT, COMMUNICATIONS FAILURE, THEFT, DESTRUCTION OR UNAUTHORIZED ACCESS
+          TO COMPANY’S RECORDS, PROGRAMS OR SERVICES.
+          <br>
+          <br>
+          12. INDEMNITY
+          <br>
+          <br>
+          You agree to defend, indemnify and hold harmless Company (and each of our officers,
+          directors, members, employees, agents and affiliates) from any claim, demand, action,
+          damage, loss, cost or expense, including without limitation reasonable attorneys’
+          fees, arising out or relating to
+          <br><br>
+          (a) your use of, or conduct in connection with,
+          our Services;
+          <br><br>
+          (b) any Feedback you provide;
+          <br><br>
+          (c) your violation of these Terms; or
+          <br><br>
+          (d) your violation of any rights of any other person or entity.
+          <br><br>
+          13. MISCELLANEOUS.
+          <br>
+          <br>
+          13.1. Entire Agreement; Order of Precedence. These Terms contain the entire agreement,
+          and supersede all prior and contemporaneous understandings between the parties regarding
+          the Services. These Terms do not alter the terms or conditions of any other electronic
+          or written agreement you may have with Company for the Services or for any other
+          Company product or service or otherwise. In the event of any conflict between these
+          Terms and any other agreement you may have with Company, the terms of that other
+          agreement will control only if these Terms are specifically identified and declared
+          to be overridden by such other agreement.
+          <br>
+          <br>
+          13.2. Amendment. We reserve the right to make changes or modifications to these
+          Terms from time to time, in our sole discretion. Amended Terms will become effective immediately on the date they are posted to the
+          Services unless we state otherwise via our notice of such amended Terms. Any amended
+          Terms will apply prospectively to use of the Services after such changes become
+          effective. Your continued use of the Services following the effective date of such
+          changes will constitute your acceptance of such changes. If you do not agree to
+          any amended Terms, you must discontinue using the Services.
+          <br>
+          <br>
+          13.3. Waiver. Our failure or delay in exercising any right, power or privilege under
+          these Terms will not operate as a waiver thereof.
+          <br>
+          <br>
+          13.4. Severability. The invalidity or unenforceability of any of these Terms will
+          not affect the validity or enforceability of any other of these Terms, all of which
+          will remain in full force and effect.
+          <br>
+          <br>
+          13.5. Force Majeure Events. Company will not be liable for any loss or damage
+          arising from any event beyond Company’s reasonable control, including, but not
+          limited to, flood, extraordinary weather conditions, earthquake, or other act of
+          God, fire, war, insurrection, riot, labor dispute, accident, action of
+          government, communications, power failure, or equipment or software malfunction
+          (each, a “Force Majeure Event”).
+          <br>
+          <br>
+          13.6. Assignment. You may not assign or transfer any of your rights or
+          obligations under these Terms without prior written consent from Company,
+          including by operation of law or in connection with any change of control.
+          Company may assign or transfer any or all of its rights under these Terms, in
+          whole or in part, without obtaining your consent or approval. <br>
+          <br><br>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- end Adopters -->
+
+
+  </main>
+
+  <footer role="contentinfo" class="bg-gradient-blue-radial-left">
+
+    <div class="container-fluid footer">
+      <div class="container">
+        <div class="grid-3 footer-menu">
+          <ul class="grid-3--content">
+            <li class="col footer-menu--col">
+              <h3 class="footer-menu--heading">Resources</h3>
+              <ul>
+                <!--<li class="is-active">-->
+                  <!--<a href="/">Home</a>-->
+                <!--</li>-->
+                <li>
+                  <img src="app/assets/img/svg/icon-heartbeat.svg" class="svg-icon">
+                  <a href="http://status.infura.io">INFURA Health</a>
+                </li>
+                <li>
+                  <a href="https://infura.io/docs/">Documentation</a>
+                </li>
+                <div class="linespace"></div>
+                <li>
+                  <a href="terms.html">Terms of Service</a>
+                </li>
+                <li>
+                  <a href="privacy.html">Privacy Policy</a>
+                </li>
+              </ul>
+            </li>
+            <li class="col footer-menu--col">
+              <h3 class="footer-menu--heading">Social</h3>
+              <ul>
+                <li>
+                  <img src="app/assets/img/svg/icon-twitter.svg" class="svg-icon">
+                  <a href="https://twitter.com/infura_io">Twitter</a>
+                </li>
+                <li>
+                  <img src="app/assets/img/svg/icon-reddit.svg" class="svg-icon">
+                  <a href="https://www.reddit.com/r/infura">Reddit</a>
+                </li>
+                <li>
+                  <img src="app/assets/img/svg/icon-medium.svg" class="svg-icon">
+                  <a href="https://blog.infura.io">Blog</a>
+                </li>
+                <li>
+                  <img src="app/assets/img/svg/icon-github.svg" class="svg-icon">
+                  <a href="https://github.com/INFURA">Github</a>
+                </li>
+                <li>
+                  <img src="app/assets/img/svg/icon-facebook.svg" class="svg-icon">
+                  <a href="https://www.facebook.com/infuraio">Facebook</a>
+                </li>
+              </ul>
+            </li>
+            <li class="col footer-menu--col">
+              <h3 class="footer-menu--heading">Contact&nbsp;us</h3>
+              <ul>
+                <li>
+                  <img src="app/assets/img/svg/icon-envelope.svg" class="svg-icon">
+                  <a href="mailto:infura@infura.io" onclick="_gs('event', 'Email Bottom')">infura@infura.io</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-yellow">
+      <div class="grid-3 footer-imprint">
+        <div class="grid-3--content">
+          <div class="col footer-imprint--logo">
+          </div>
+          <div class="col footer-imprint--text">
+            <p>
+              INFURA<sup>TM</sup> is a service of ConsenSys, a venture production studio. ConsenSys builds decentralized applications, enterprise solutions and developer tools for blockchain ecosystems, focusing primarily on Ethereum.
+            </p>
+            <p>
+              <small>Copyright © 2017 ConsenSys Inc. All Rights Reserved. INFURA<sup>TM</sup> is a trademark of ConsenSys AG.</small>
+            </p>
+          </div>
+          <a href="https://consensys.net" class="col footer-imprint--consensys"></a>
+        </div>
+    </div>
+
+  </footer>
+
+  <footer class="post-footer">
+    <div class="attribution">Godzilla Vector Graphic by <a rel="nofollow" href="https://www.vecteezy.com/">www.vecteezy.com</a></div>
+  </footer>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+     if (!window.jQuery) {
+        document.write('<script src="assets/js/jquery-1.9.1.min.js"><\/script>');
+     }
+     if (!window.jQuery) {
+        document.write('<script src="assets/js/require-2.3.3.min.js"><\/script>');
+     }
+  </script>
+  <script src="assets/js/scripts.min.js"></script>
+  <script>
+    // swap out japanese logos
+    var userLang = navigator.language || navigator.userLanguage;
+    if (userLang.includes('zh')) { // chinese
+        $('body').addClass("lang-ch");
+    }
+    if ((userLang.includes('zh-tw') || userLang.includes('zh-hk'))
+    || userLang.includes('ko')) { // must come after 'zh', taiwain, hk, korea
+        $('body').addClass("lang-tr-ch");
+    }
+  </script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
+      <script>
+          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          e.src='//www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+          ga('create','UA-XXXXX-X');ga('send','pageview');
+      </script>
+  -->
+
+  </body>
+</html>
