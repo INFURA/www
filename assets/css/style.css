@@ -1315,6 +1315,8 @@ p > .sup {
     font-weight: 600;
     letter-spacing: 1px;
     text-shadow: 0px 1px 1px #ccc; }
+    .yellow-heading .container h2.oneline {
+      padding-top: .5em; }
     @media (min-width: 500px) {
       .yellow-heading .container h2 {
         padding-top: .5em; } }
@@ -1398,12 +1400,18 @@ p > .sup {
     .features .features--list .feature--item:after {
       clear: both; }
     .features .features--list .feature--item .features--img {
-      float: left;
       margin-bottom: 2em;
-      margin-right: 2em; }
+      margin-right: auto;
+      margin-left: auto; }
+      @media (min-width: 480px) {
+        .features .features--list .feature--item .features--img {
+          margin-top: 0em;
+          margin-right: 2em;
+          margin-left: 0; } }
     .features .features--list .feature--item .features--txt {
       padding-bottom: 1em;
-      display: inline-block; }
+      display: inline-block;
+      text-align: center; }
       .features .features--list .feature--item .features--txt > strong {
         display: block;
         color: #3c5596;
@@ -1411,11 +1419,15 @@ p > .sup {
         font-size: 1.1em; }
       .features .features--list .feature--item .features--txt > p {
         margin-top: .3em;
-        max-width: 75%;
+        max-width: 100%;
         color: #5c606a;
         line-height: 1.6em; }
+        @media (min-width: 480px) {
+          .features .features--list .feature--item .features--txt > p {
+            max-width: 75%; } }
       @media (min-width: 480px) {
         .features .features--list .feature--item .features--txt {
+          text-align: left;
           display: block; } }
 
 .features--img.features--img-api {
@@ -1500,6 +1512,8 @@ p > .sup {
     max-width: 34em;
     line-height: 1.8em;
     margin-bottom: 0.5em; }
+    .decentralisation .decentralisation--text p.decentralisation--gateway {
+      line-height: 1.5em; }
 
 .peering {
   display: -ms-flexbox;
