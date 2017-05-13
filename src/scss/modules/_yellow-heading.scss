@@ -27,6 +27,10 @@
       letter-spacing: 1px;
       text-shadow: 0px 1px 1px #ccc;
 
+      &.oneline {
+        padding-top: .5em;
+      }
+
       @include breakpoint(500px) {
         padding-top: .5em;
       }
