@@ -1720,6 +1720,10 @@ p > .sup {
     width: 100px;
     height: 100px; }
 
+.container.form-container {
+  max-width: 60em;
+  margin-left: 20em; }
+
 .footer {
   background: url("../img/svg/bg-bridge.svg");
   background-size: cover;
