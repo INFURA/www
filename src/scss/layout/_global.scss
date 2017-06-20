@@ -94,3 +94,34 @@ a {
     display: none;
   }
 }
+
+.grid-3 {
+
+  @include breakpoint(320px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .col {
+      width: 50%;
+      padding: .5em;
+
+    }
+  }
+
+
+  @include breakpoint(480px) {
+    .col {
+      width: 33%;
+      padding: 1em;
+
+    }
+  }
+
+}
+
+
+.visually-hidden {
+  @include breakpoint(screen) {
+    display: none;
+  }
+}

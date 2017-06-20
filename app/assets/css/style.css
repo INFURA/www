@@ -1248,12 +1248,12 @@ p > .sup {
       background-color: #31bdf7;
       border-color: #31bdf7;
       color: #fff; }
-  .header .header--branding .grid-4 .col {
+  .header .header--branding .grid-3 .col {
     min-width: 10em;
     width: 50%; }
     @media (min-width: 677px) {
-      .header .header--branding .grid-4 .col {
-        width: 25%; } }
+      .header .header--branding .grid-3 .col {
+        width: 33%; } }
   .header .header--branding .branding-stats ul {
     list-style-type: none; }
   .header .header--branding .branding-stats .stats-header {
@@ -1891,6 +1891,27 @@ a {
 @media (min-width: 480px) {
   .grid-4 .col {
     width: 25%;
+    padding: 1em; } }
+
+@media screen {
+  .visually-hidden {
+    display: none; } }
+
+@media (min-width: 320px) {
+  .grid-3 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .grid-3 .col {
+      width: 50%;
+      padding: .5em; } }
+
+@media (min-width: 480px) {
+  .grid-3 .col {
+    width: 33%;
     padding: 1em; } }
 
 @media screen {

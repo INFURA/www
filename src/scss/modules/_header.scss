@@ -101,11 +101,11 @@
 
     }
 
-    .grid-4 .col {
+    .grid-3 .col {
       min-width: 10em;
       width: 50%;
       @include breakpoint(677px) {
-        width: 25%;
+        width: 33%;
       }
     }
 
