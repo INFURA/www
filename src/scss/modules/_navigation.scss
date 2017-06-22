@@ -16,14 +16,19 @@
         text-transform: uppercase;
         color: $white;
         font-weight: $font-weight-light;
-        letter-spacing: 2px;
-        font-size: 0.8em;
+        letter-spacing: 1px;
+        font-size: 0.7em;
 
         &.twitter > .svg-icon {
           fill: $blue-lighter;
           height: 1.4em;
           vertical-align: bottom;
           width: 1.3em;
+        }
+
+        @include breakpoint(420px) {
+          letter-spacing: 2px;
+          font-size: 0.8em;
         }
 
         @include breakpoint(600px) {
