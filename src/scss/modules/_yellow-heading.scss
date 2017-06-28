@@ -44,10 +44,18 @@
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include breakpoint(1600px) {
+      height: $height+1;
+    }
   }
 
   & + div:not(.grid-with-bg) {
     margin-top: -$height;
     padding-top: $height;
+
+    @include breakpoint(1600px) {
+      margin-top: -$height - 1;
+    }
   }
 }
