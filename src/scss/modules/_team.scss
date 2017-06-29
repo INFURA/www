@@ -55,5 +55,11 @@
   &.team--img-wuehler {
     @include sprite($team-wuehler, 'inline-block');
   }
+  &.team--img-christophe {
+    @include sprite($team-christophe, 'inline-block');
+  }
+  &.team--img-cocchiaro {
+    @include sprite($team-cocchiaro, 'inline-block');
+  }
 
 }

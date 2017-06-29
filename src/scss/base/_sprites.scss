@@ -16,10 +16,12 @@ $logos-truffle: -0px -600px 75px 75px;
 $logos-ujo: -0px -675px 75px 75px;
 $logos-uport: -0px -750px 75px 75px;
 $logos-vidroll: -0px -825px 75px 75px;
-$team-galano: -0px -0px 100px 100px;
-$team-junge: -0px -100px 100px 100px;
-$team-pietrzak: -0px -200px 100px 100px;
-$team-wuehler: -0px -300px 100px 100px;
+$team-cocchiaro: -0px -0px 100px 100px;
+$team-galano: -0px -100px 100px 100px;
+$team-junge: -0px -200px 100px 100px;
+$team-pietrzak: -0px -300px 100px 100px;
+$team-wuehler: -0px -400px 100px 100px;
+$team-christophe: -0px -500px 100px 101px;
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }
@@ -72,6 +74,6 @@ $team-wuehler: -0px -300px 100px 100px;
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .bg-team {
     background-image: url('../img/sprite-team@2x.jpg');
-    background-size: 100px 400px;
+    background-size: 100px 601px;
   }
 }
