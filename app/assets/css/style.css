@@ -1151,7 +1151,7 @@ p > .sup {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .bg-logos, .adopters--img {
     background-image: url("../img/sprite-logos@2x.jpg");
-    background-size: 75px 600px; } }
+    background-size: 75px 900px; } }
 
 .bg-team, .team--img {
   background-image: url("../img/sprite-team.jpg"); }
@@ -1615,14 +1615,6 @@ p > .sup {
       margin: 0 auto; }
 
 .adopters--img.adopters--img-btcrelay {
-  background-position: 0px -75px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  width: 75px;
-  height: 75px; }
-
-.adopters--img.adopters--img-ujo {
   background-position: 0px -450px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1630,31 +1622,23 @@ p > .sup {
   width: 75px;
   height: 75px; }
 
-.adopters--img.adopters--img-benefactory {
-  background-position: 0px 0px;
+.adopters--img.adopters--img-ujo {
+  background-position: 0px -675px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
   width: 75px;
   height: 75px; }
 
-.adopters--img.adopters--img-singular {
-  background-position: 0px -300px;
+.adopters--img.adopters--img-vidroll {
+  background-position: 0px -825px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
   width: 75px;
   height: 75px; }
 
-.adopters--img.adopters--img-regis {
-  background-position: 0px -225px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  width: 75px;
-  height: 75px; }
-
-.adopters--img.adopters--img-truffle {
+.adopters--img.adopters--img-oraclize {
   background-position: 0px -375px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1662,7 +1646,31 @@ p > .sup {
   width: 75px;
   height: 75px; }
 
-.adopters--img.adopters--img-uport {
+.adopters--img.adopters--img-myetherwallet {
+  background-position: 0px -300px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 75px;
+  height: 75px; }
+
+.adopters--img.adopters--img-digix {
+  background-position: 0px -150px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 75px;
+  height: 75px; }
+
+.adopters--img.adopters--img-benefactory {
+  background-position: 0px -75px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 75px;
+  height: 75px; }
+
+.adopters--img.adopters--img-singular {
   background-position: 0px -525px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1670,8 +1678,32 @@ p > .sup {
   width: 75px;
   height: 75px; }
 
+.adopters--img.adopters--img-regis {
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 75px;
+  height: 75px; }
+
+.adopters--img.adopters--img-truffle {
+  background-position: 0px -600px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 75px;
+  height: 75px; }
+
+.adopters--img.adopters--img-uport {
+  background-position: 0px -750px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 75px;
+  height: 75px; }
+
 .adopters--img.adopters--img-metamask {
-  background-position: 0px -150px;
+  background-position: 0px -225px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
