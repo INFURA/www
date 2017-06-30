@@ -61,5 +61,10 @@
   &.team--img-cocchiaro {
     @include sprite($team-cocchiaro, 'inline-block');
   }
-
+  &.team--img-tu {
+    @include sprite($team-tu, 'inline-block');
+  }
+  &.team--img-manaog {
+    @include sprite($team-manaog, 'inline-block');
+  }
 }
