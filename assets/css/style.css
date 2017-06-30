@@ -1151,7 +1151,7 @@ p > .sup {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .bg-logos, .adopters--img {
     background-image: url("../img/sprite-logos@2x.jpg");
-    background-size: 75px 600px; } }
+    background-size: 75px 975px; } }
 
 .bg-team, .team--img {
   background-image: url("../img/sprite-team.jpg"); }
@@ -1159,7 +1159,7 @@ p > .sup {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .bg-team, .team--img {
     background-image: url("../img/sprite-team@2x.jpg");
-    background-size: 100px 400px; } }
+    background-size: 100px 601px; } }
 
 .godzilla, .header .header--branding {
   background-image: url("data:image/svg+xml,%3Csvg width='596' height='754' viewBox='0 0 596 754' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M436.884 41.664V28.628l1.578 3.61 18.512 18.853-20.09-9.426zM572.996 298.69c-2.308-1.228-.494-4.994 1.9-6.036 2.393-1.04 5.49-1.398 6.63-3.782 1.68-3.524-2.704-6.887-6.444-7.806-15.04-3.687-33.925 7-33.206 22.738-1.23-4.71-5.62-8.376-10.398-8.686-7.133 6.965 1.213 22.276-6.827 28.13-3.586 2.614-8.83 1.46-12.207-1.43-3.377-2.888-5.323-7.11-7.17-11.187-5.12-11.305-10.32-22.93-11.14-35.35-.53-8.013.755-16.354-1.97-23.89-3.358-9.28-11.975-15.26-18.74-22.353-9.233-9.68-15.452-22.3-17.55-35.622-4.87-30.886-15.376-58.22-4.52-87.484.406-1.088.856-2.22 1.732-2.964 1.65-1.403 4.1-.942 6.184-.403 5.85 1.504 11.7 3.014 17.552 4.52 5.757-2.025 6.527-7.24 5.738-16.868-3.445-3.38-10.184-6.52-13.63-9.9 5.094 1.902 11.682 2.276 16.015 2.68 5.403.497 9.257-14.228 10.243-19.66.63-3.474-4.154-7.91-5.493-11.17-1.34-3.26-6.702-8.88-9.72-7.14 4.537-18.856-10.362-38.657-28.8-43.59-18.436-4.935-37.41 3.506-52.487 15.387L387.11 30.966c-9.64 9.865-26.927 8.167-35.723-2.39 2.492 9.542 4.986 19.085 7.483 28.63l-34.443-12.26c1.88 9.677 6.863 18.706 14.007 25.37-5.447 1.68-11.54 1.074-16.563-1.653-.57 2.515-1.142 5.03-1.71 7.546-5.098-4.155-11.27-6.924-17.72-7.955 9.772 12.81 18.48 26.454 26.01 40.747-9.652-2.17-19.307-4.343-28.96-6.515 8.22 7.862 15.955 22.972 6.215 28.755 3.08 6.8 6.164 13.6 9.246 20.402-11.635 2.132-24.092-.868-33.552-8.085 5.84 7.95 11.68 15.9 17.524 23.85-4.42-3.77-7.684 5.356-9.88 10.783-5.194 12.833-25.14 9.69-34.8 19.484-7.703 7.814-6.428 21.34-13.18 30.016-3.122 4.013-7.647 6.57-11.813 9.43-27.26 18.713-41.373 55.306-33.906 87.908 1.923 8.4 5.406 16.863 12.03 22.24 12.716 10.312 31.228 5.704 46.696.607-8.652 7.978-10.114 22.796-3.198 32.368-3.452 4.187-10.272 7.4-14.965 4.74s-7.902-7.322-10.947-11.828c5.365 11.734 8.392 24.567 8.85 37.502-4.196-1.904-8.703-3.093-13.28-3.505 3.89 8.3 6.415 17.258 7.44 26.394-5.532-3.115-11.478-5.464-17.624-6.97l9.283 26.282c-6.434-1.47-12.865-2.94-19.296-4.406l15.68 34.07c-4.32.298-8.64.59-12.958.885 6.044 5.767 10.258 13.49 11.876 21.76-3.802-1.79-7.603-3.58-11.402-5.364 4.606 16.842 7.683 34.118 9.183 51.534-3.504-1.15-7.006-2.295-10.51-3.446 1.257 9.612-22.48 13.66-28.115 4.884-1.1 7.003-4.406 13.627-9.314 18.656l-14.2-13.8-2.61 11.04c-5.89-3.963-11.78-7.927-17.67-11.894-2.658 9.832-3.596 20.143-2.754 30.305-5.902-2.184-11.804-4.365-17.708-6.55-1.31 6.97-2.625 13.938-3.94 20.908l-7.418-13.552c4.818 18.103-6.815 39.04-24.532 44.158C69.105 642.083-.922 660.766.01 671.904c17.158-3.61 204.61-15.57 208.757-30.104.354 28.49-10.06 56.986-28.62 78.308 15.88 7.478 29.862 22.198 45.742 29.673 3.805 1.793 7.82 3.625 12.002 3.313 4.182-.314 8.468-3.6 8.374-7.87l29.398 5.086c4.212.726 9.797.71 11.286-3.367.854-2.337-.177-5.095.802-7.382 1.307-3.055 5.264-3.594 8.536-3.687 8.27-.234 16.543-.47 24.814-.706l-14.7-33.474c-1.39-3.168-2.8-6.396-3.21-9.84-1.457-12.227 9.36-21.803 17.803-30.62 15.56-16.245 25.91-37.575 29.138-60.026 13.452-12.163 25.343-28.377 29.498-46.203-1.47 15.92-5.184 31.622-10.994 46.476 6.883 3.54 15.24 1.6 22.582-.792 7.343-2.39 17.44-2.22 20.397 5.03 1.412 3.458 11.797 8.357 11.09 12.03-4.3 22.3 5.687 42.065 9.453 73.41 10.6 18.083 19.89 27.6 43.306 29.507 2.193-3.564 2.984-7.996 2.164-12.12 12.963 4.407 25.414 10.377 37.01 17.745 4.524-2.81 4.815-10.533.518-13.69 6.98 2.246 14.492 2.75 21.7 1.46 7.9-15.154-11.234-30.903-12.692-47.997-.717-8.41 2.98-16.46 6.006-24.32 22.817-59.277 7.402-131.793-37.45-176.153-10.853-10.734-23.643-20.517-29.208-34.846-9.043-23.275 2.87-53.883-13.738-72.334 17.037 13.42 36.963 15.288 58.398 17.454 11.37 1.15 23.542.368 33.08-6.043 11.136-7.488 17.497-21.83 30.07-26.384 4.022-1.456 8.405-1.768 12.317-3.506 3.912-1.736 7.462-5.634 6.802-9.93-6.046-3-12.72-4.673-19.446-4.875-.612-5.398 6.365-7.943 11.695-8.154 5.332-.213 12.26-1.268 13.216-6.613.853-4.756-4.28-8.463-8.962-9.264-4.682-.8-9.753-.14-13.948-2.402z' fill='%23314880' fill-rule='evenodd'/%3E%3C/svg%3E");
@@ -1615,7 +1615,7 @@ p > .sup {
       margin: 0 auto; }
 
 .adopters--img.adopters--img-btcrelay {
-  background-position: 0px -75px;
+  background-position: 0px -150px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1623,14 +1623,22 @@ p > .sup {
   height: 75px; }
 
 .adopters--img.adopters--img-ujo {
-  background-position: 0px -450px;
+  background-position: 0px -750px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
   width: 75px;
   height: 75px; }
 
-.adopters--img.adopters--img-benefactory {
+.adopters--img.adopters--img-adchain {
+  background-position: 0px -75px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 75px;
+  height: 75px; }
+
+.adopters--img.adopters--img-oraclize {
   background-position: 0px 0px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1638,23 +1646,7 @@ p > .sup {
   width: 75px;
   height: 75px; }
 
-.adopters--img.adopters--img-singular {
-  background-position: 0px -300px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  width: 75px;
-  height: 75px; }
-
-.adopters--img.adopters--img-regis {
-  background-position: 0px -225px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  width: 75px;
-  height: 75px; }
-
-.adopters--img.adopters--img-truffle {
+.adopters--img.adopters--img-myetherwallet {
   background-position: 0px -375px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1662,7 +1654,31 @@ p > .sup {
   width: 75px;
   height: 75px; }
 
-.adopters--img.adopters--img-uport {
+.adopters--img.adopters--img-digix {
+  background-position: 0px -225px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 75px;
+  height: 75px; }
+
+.adopters--img.adopters--img-benefactory {
+  background-position: 0px -450px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 75px;
+  height: 75px; }
+
+.adopters--img.adopters--img-singular {
+  background-position: 0px -600px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 75px;
+  height: 75px; }
+
+.adopters--img.adopters--img-regis {
   background-position: 0px -525px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1670,8 +1686,24 @@ p > .sup {
   width: 75px;
   height: 75px; }
 
+.adopters--img.adopters--img-truffle {
+  background-position: 0px -675px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 75px;
+  height: 75px; }
+
+.adopters--img.adopters--img-uport {
+  background-position: 0px -825px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 75px;
+  height: 75px; }
+
 .adopters--img.adopters--img-metamask {
-  background-position: 0px -150px;
+  background-position: 0px -300px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1702,28 +1734,42 @@ p > .sup {
   margin: 0 auto;
   box-shadow: 2px 2px 2px #888; }
   .team--img.team--img-galano {
-    background-position: 0px 0px;
+    background-position: 0px -100px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: "inline-block";
     width: 100px;
     height: 100px; }
   .team--img.team--img-pietrzak {
-    background-position: 0px -200px;
+    background-position: 0px -300px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: block;
     width: 100px;
     height: 100px; }
   .team--img.team--img-junge {
-    background-position: 0px -100px;
+    background-position: 0px -200px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: block;
     width: 100px;
     height: 100px; }
   .team--img.team--img-wuehler {
-    background-position: 0px -300px;
+    background-position: 0px -400px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: "inline-block";
+    width: 100px;
+    height: 100px; }
+  .team--img.team--img-christophe {
+    background-position: 0px -500px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: "inline-block";
+    width: 100px;
+    height: 101px; }
+  .team--img.team--img-cocchiaro {
+    background-position: 0px 0px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: "inline-block";
