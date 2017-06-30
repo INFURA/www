@@ -15,6 +15,7 @@ Build sprites
 ```
 gulp sprites
 ```
+(may require imagemagick which you can install with homebrew or apt-get)
 
 Folders:
 
