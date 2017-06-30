@@ -4,18 +4,19 @@ $features-ipfs: -0px -150px 75px 75px;
 $features-multiclient: -0px -225px 75px 75px;
 $features-private: -0px -300px 75px 75px;
 $features-tls: -0px -375px 75px 75px;
-$logos-regis: -0px -0px 75px 75px;
-$logos-benefactory: -0px -75px 75px 75px;
-$logos-digix: -0px -150px 75px 75px;
-$logos-metamask: -0px -225px 75px 75px;
-$logos-myetherwallet: -0px -300px 75px 75px;
-$logos-oraclize: -0px -375px 75px 75px;
-$logos-btcrelay: -0px -450px 75px 75px;
-$logos-singular: -0px -525px 75px 75px;
-$logos-truffle: -0px -600px 75px 75px;
-$logos-ujo: -0px -675px 75px 75px;
-$logos-uport: -0px -750px 75px 75px;
-$logos-vidroll: -0px -825px 75px 75px;
+$logos-oraclize: -0px -0px 75px 75px;
+$logos-adchain: -0px -75px 75px 75px;
+$logos-btcrelay: -0px -150px 75px 75px;
+$logos-digix: -0px -225px 75px 75px;
+$logos-metamask: -0px -300px 75px 75px;
+$logos-myetherwallet: -0px -375px 75px 75px;
+$logos-benefactory: -0px -450px 75px 75px;
+$logos-regis: -0px -525px 75px 75px;
+$logos-singular: -0px -600px 75px 75px;
+$logos-truffle: -0px -675px 75px 75px;
+$logos-ujo: -0px -750px 75px 75px;
+$logos-uport: -0px -825px 75px 75px;
+$logos-vidroll: -0px -900px 75px 75px;
 $team-cocchiaro: -0px -0px 100px 100px;
 $team-galano: -0px -100px 100px 100px;
 $team-junge: -0px -200px 100px 100px;
@@ -64,7 +65,7 @@ $team-christophe: -0px -500px 100px 101px;
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .bg-logos {
     background-image: url('../img/sprite-logos@2x.jpg');
-    background-size: 75px 900px;
+    background-size: 75px 975px;
   }
 }
 
