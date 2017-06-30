@@ -1214,13 +1214,20 @@ p > .sup {
     .header .header--branding.registration .header--logo {
       margin: 0 auto; }
       .header .header--branding.registration .header--logo svg {
-        height: 100px; }
+        height: 100px;
+        margin: 0 auto; }
+        @media (min-width: 760px) {
+          .header .header--branding.registration .header--logo svg {
+            margin-left: 0; } }
     .header .header--branding.registration h1 {
-      text-align: left;
+      text-align: center;
       font-size: 1.5em;
       margin-left: 10px;
       padding-top: 10px;
       letter-spacing: 1px; }
+      @media (min-width: 760px) {
+        .header .header--branding.registration h1 {
+          text-align: left; } }
   .header .header--branding > h1 {
     color: #fff;
     font-size: 3.2em;
@@ -1374,7 +1381,7 @@ p > .sup {
         .navigation .nav--list .nav--list-item > a {
           letter-spacing: 2px;
           font-size: 0.8em; } }
-      @media (min-width: 600px) {
+      @media (min-width: 614px) {
         .navigation .nav--list .nav--list-item > a {
           padding-right: 2em;
           padding-left: 2em; } }
@@ -1792,7 +1799,9 @@ p > .sup {
 
 .container.form-container {
   max-width: 60em;
-  margin-left: 20em; }
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto; }
 
 .footer {
   background: url("../img/svg/bg-bridge.svg");
