@@ -291,7 +291,83 @@
       </div>
     </div>
 
+    <!-- HowTo -->
+    <div class="container-fluid bg-gradient-blue-radial">
 
+      <div class="how-to">
+        <h3>Quick Start</h3>
+        <p class="subtitle">Get Started with INFURA<sup>TM</sup> in 1 Minute!</p>
+        <ol class="how-to--list">
+          <li class="col steps">
+            <h4 class="step">Get an INFURA<sup>TM</sup> API Key <a href="register.html" target="_blank">here</a>.</h4>
+            <p class="step"><a href="register.html" target="_blank">Sign up</a> to get your own API access token.</p>
+          </li>
+          <li class="col steps">
+            <h4 class="step">Choose a network.</h4>
+            <p class="step">Use one of these test or production INFURA<sup>TM</sup> endpoints to specify an Ethereum client provider.</p>
+            <p class="step">
+              <table class="step networks">
+                <thead>
+                  <tr>
+                    <th>Network</th>
+                    <th>Description</th>
+                    <th>URL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mainnet</td>
+                    <td>production network</td>
+                    <td><a href="https://mainnet.infura.io/">https://mainnet.infura.io/</a></td>
+                  </tr>
+                  <tr>
+                    <td>Ropsten</td>
+                    <td>test network</td>
+                    <td><a href="https://ropsten.infura.io/">https://ropsten.infura.io/</a></td>
+                  </tr>
+                  <tr>
+                    <td>INFURAnet</td>
+                    <td><a href="https://explorer.infuranet.io/">test network</a></td>
+                    <td><a href="https://infuranet.infura.io/">https://infuranet.infura.io/</a></td>
+                  </tr>
+                  <tr>
+                    <td>Kovan</td>
+                    <td>test network</td>
+                    <td><a href="https://kovan.infura.io/">https://kovan.infura.io/</a></td>
+                  </tr>
+                  <tr>
+                    <td>Rinkeby</td>
+                    <td>test network</td>
+                    <td><a href="https://rinkeby.infura.io/">https://rinkeby.infura.io/</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </p>
+          </li>
+          <li class="col steps">
+            <h4 class="step">Make requests to INFURA<sup>TM</sup> in your dapp.</h4>
+            <p class="step"><a href="https://infura.io/docs/#supported-json-rpc-methods" target="_blank">List of Supported JSON-RPC Methods</a>.<br/><br/>Below is a quick command line example using CURL.</p>
+            <div class="step codeshell">
+              <code><span class="line"><span class="path">$</span> <span class="command">curl -X POST</span> <span class="slash">\</span></span>
+                <span class="line more_indent"><span class="command">-H</span> "Content-Type: application/json" <span class="slash">\</span></span>
+                <span class="line more_indent"><span class="command">--data</span> '{"jsonrpc": "2.0", "id": 1, "method": "eth_blockNumber", "params": []}' <span class="slash">\</span></span>
+                <span class="line more_indent option">"https://mainnet.infura.io/"</span></code>
+            </div>
+            <br/>
+            <p class="step">The result should be something like:</p>
+            <div class="step codeshell">
+              <code><span class="line"><span class="path">$</span>
+                <span class="">{"jsonrpc": "2.0","result": "0x3ccb11", "id":1}</span></span></code>
+            </div>
+            <br/>
+            <p class="step">where the <code>"0x3ccb11"</code> will be replaced with the number of the most recent block.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <!-- end HowTo -->
+
+    <!-- Adopters -->
     <div class="container">
 
       <div class="adopters">

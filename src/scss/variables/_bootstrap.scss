@@ -49,7 +49,10 @@ $font-family-sans-serif:  -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxyge
 $font-family-secondary:  	'Roboto', Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-$font-family-monospace:   "Courier New", monospace !default;
+$font-family-monospace:   Consolas, Menlo, Monaco, "Lucida Console",
+                          "Liberation Mono", "DejaVu Sans Mono",
+                          "Bitstream Vera Sans Mono", "Courier New", monospace,
+                          serif !default;
 $font-family-base:        $font-family-sans-serif !default;
 
 $font-size-base:          14px !default;
@@ -843,9 +846,9 @@ $close-text-shadow:           0 1px 0 #fff !default;
 //
 //##
 
-$code-color:                  #c7254e !default;
-$code-bg:                     #f9f2f4 !default;
 
+$code-color:                  $gray-light;
+$code-bg:                     $code-shell-color;
 $kbd-color:                   #fff !default;
 $kbd-bg:                      #333 !default;
 
