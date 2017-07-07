@@ -1,6 +1,6 @@
 .decentralisation {
 
-  min-height: 450px;
+  min-height: 420px;
   position: relative;
   //background: linear-gradient(to bottom, #6378ab 0%,#3c5596 42%,#3c5596 100%);
   background: linear-gradient(to bottom, #3c5596 0%,#6378ab 68%,#3c5596 79%,#3c5596 100%);
@@ -26,20 +26,22 @@
       padding-top: 3em;
     }
 
-    p {
+    p, h4 {
       display: block;
       max-width: 500px;
       margin-right: auto;
       margin-left: auto;
       max-width: 34em;
     }
-
+    h4 {
+      font-size: 1.2em;
+    }
 
   }
 
   .decentralisation--text {
 
-    p {
+    p, h4 {
       color: $text-color-light;
       text-align: center;
       margin-right: auto;
