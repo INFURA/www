@@ -1135,7 +1135,7 @@ p > .sup {
 .features > h3, .adopters > h3, .team > h3 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
 
-.yellow-heading-simple, .decentralisation .decentralisation--text p.decentralisation--gateway, .peering h2, .devops h3, .how-to > h3 {
+.yellow-heading-simple, .decentralisation .decentralisation--text p.decentralisation--gateway, .decentralisation .decentralisation--text h4.decentralisation--gateway, .peering h2, .devops h3, .how-to > h3 {
   color: #efdf77;
   font-weight: 600;
   font-size: 2.5em;
@@ -1528,7 +1528,7 @@ p > .sup {
   height: 75px; }
 
 .decentralisation {
-  min-height: 450px;
+  min-height: 420px;
   position: relative;
   background: linear-gradient(to bottom, #3c5596 0%, #6378ab 68%, #3c5596 79%, #3c5596 100%); }
   .decentralisation .decentralisation--bg {
@@ -1547,13 +1547,15 @@ p > .sup {
     @media (min-width: 600px) {
       .decentralisation .decentralisation--text {
         padding-top: 3em; } }
-    .decentralisation .decentralisation--text p {
+    .decentralisation .decentralisation--text p, .decentralisation .decentralisation--text h4 {
       display: block;
       max-width: 500px;
       margin-right: auto;
       margin-left: auto;
       max-width: 34em; }
-  .decentralisation .decentralisation--text p {
+    .decentralisation .decentralisation--text h4 {
+      font-size: 1.2em; }
+  .decentralisation .decentralisation--text p, .decentralisation .decentralisation--text h4 {
     color: #dedede;
     text-align: center;
     margin-right: auto;
@@ -1561,7 +1563,7 @@ p > .sup {
     max-width: 34em;
     line-height: 1.8em;
     margin-bottom: 0.5em; }
-    .decentralisation .decentralisation--text p.decentralisation--gateway {
+    .decentralisation .decentralisation--text p.decentralisation--gateway, .decentralisation .decentralisation--text h4.decentralisation--gateway {
       line-height: 1.5em; }
 
 .peering {
