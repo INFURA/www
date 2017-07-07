@@ -244,68 +244,22 @@
       </div>
     </div>
 
-    <div class="container-fluid bg-gradient-blue-radial">
-      <div class="container peering">
-        <div class="container peering--info">
-          <h2>Worldwide Peering</h2>
-          <p>
-            Ethereum client peering can be unreliable, leading to problems with syncing and visibility of new transactions and blocks.
-          </p>
-          <p>
-           As a Source of Truth, INFURA<sup>TM</sup> aims to be immediately aware of new transactions and blocks.
-          </p>
-          <h4>We maintain a worldwide network of clients to have the best peering on the network.</h4>
-          <br/> <br/>
-        </div>
-        <div class="container peering--image"></div>
-      </div>
-    </div>
-
-    <div class="container-fluid yellow-heading">
-      <div class="yellow-heading--wrapper">
-        <div class="container">
-          <h2 class="oneline">The Architecture of INFURA<sup>TM</sup></h2>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid bg-gradient-blue">
-      <div class="container architecture">
-      </div>
-    </div>
-
-    <div class="bg-blue">
-      <div class="container-fluid devops">
-        <div class="devops--text">
-          <h3>
-            A fast Ethereum API for decentralized applications
-          </h3>
-          <p>
-            Running and syncing Ethereum blockchain nodes can be time-consuming and requires lots of storage.
-          </p>
-          <p>
-            Regular end-users may have a hard time keeping their clients in sync.
-          </p>
-          <h4>We take care of devops with reliable transaction processing so you can focus on your dapp.</h4>
-          <br/>
-        </div>
-      </div>
-    </div>
-
     <!-- HowTo -->
     <a name="how-to"></a>
-    <div class="container-fluid bg-gradient-blue-radial">
+    <div class="container-fluid bg-gradient-blue-radial-bottom">
 
       <div class="how-to">
-        <h3>Quick Start</h3>
-        <p class="subtitle">Get Started with INFURA<sup>TM</sup> in 1 Minute!</p>
+        <h3>Get Started</h3>
+        <p class="subtitle">Start using INFURA<sup>TM</sup> in a few easy steps!</p>
         <ol class="how-to--list">
           <li class="col steps">
-            <h4 class="step"><a href="register.html" target="_blank">Register</a> for an INFURA<sup>TM</sup> API Key.</h4>
-            <p class="step">It's a easy signup to get your own API access token.</p>
+            <h4 class="step"><a href="register.html" target="_blank">Register</a> for an INFURA<sup>TM</sup> Access Token.</h4>
+            <p class="step">It's an easy signup to get your own access token.</p>
           </li>
           <li class="col steps">
             <h4 class="step">Choose a network.</h4>
             <p class="step">Use one of these test or production INFURA<sup>TM</sup> endpoints as your Ethereum client provider.</p>
+            <p class="step">Add your Access Token to the end of the URL.</p>
             <p class="step">
               <table class="step networks">
                 <thead>
@@ -347,26 +301,64 @@
           </li>
           <li class="col steps">
             <h4 class="step">Make requests to INFURA<sup>TM</sup> in your dapp.</h4>
-            <p class="step"><a href="https://infura.io/docs/#supported-json-rpc-methods" target="_blank">List of Supported JSON-RPC Methods</a>.<br/><br/>Below is a quick command line example using CURL.</p>
+            <p class="step"><a href="https://infura.io/docs/#supported-json-rpc-methods" target="_blank">List of Supported JSON-RPC Methods</a><br/><br/>Below is a quick command line example using CURL.</p>
             <div class="step codeshell">
               <code><span class="line"><span class="path">$</span> <span class="command">curl -X POST</span> <span class="slash">\</span></span>
                 <span class="line indent"><span class="command">-H</span> "Content-Type: application/json" <span class="slash">\</span></span>
                 <span class="line indent"><span class="command">--data</span> '{"jsonrpc": "2.0", "id": 1, "method": "eth_blockNumber", "params": []}' <span class="slash">\</span></span>
-                <span class="line indent option">"https://mainnet.infura.io/"</span></code>
+                <span class="line indent option">"https://mainnet.infura.io/YOUR_ACCESS_TOKEN"</span></code>
             </div>
-            <br/>
             <p class="step">The result should be something like:</p>
             <div class="step codeshell">
               <code><span class="line"><span class="path">$</span>
                 <span class="">{"jsonrpc": "2.0","result": "0x3ccb11", "id":1}</span></span></code>
             </div>
+            <p class="step">where the <code>"0x3ccb11"</code> will be replaced with the block number of the most recent block on that network.</p>
             <br/>
-            <p class="step">where the <code>"0x3ccb11"</code> will be replaced with the id of the most recent block on that network.</p>
+            <br/>
+            <h4 class="step yellow">New! The INFURA<sup>TM</sup> API</h4>
+            <p class="step">Alternatively you can use the new REST-like INFURA<sup>TM</sup> API.</p>
+            <p class="step"><a href="http://docs.infura.apiary.io" target="_blank">View our API Docs here.</a></p>
+            <div class="step codeshell">
+              <code><span class="line">
+                <span class="option">https://api.infura.io/v1/jsonrpc/mainnet/eth_blockNumber</span></span></code>
+            </div>
           </li>
         </ol>
       </div>
     </div>
     <!-- end HowTo -->
+
+    <div class="container-fluid yellow-heading">
+      <div class="yellow-heading--wrapper">
+        <div class="container">
+          <h2 class="oneline">The Architecture of INFURA<sup>TM</sup></h2>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-gradient-blue">
+      <div class="container architecture">
+      </div>
+    </div>
+
+    <div class="bg-blue">
+      <div class="container-fluid devops">
+        <div class="devops--text">
+          <h3>
+            A fast Ethereum API for decentralized applications
+          </h3>
+          <p>
+            Running and syncing Ethereum blockchain nodes can be time-consuming and requires lots of storage.
+          </p>
+          <p>
+            Regular end-users may have a hard time keeping their clients in sync.
+          </p>
+          <h4>We take care of devops with reliable transaction processing so you can focus on your dapp.</h4>
+          <br/>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Adopters -->
     <div class="container">
@@ -415,6 +407,27 @@
       </div>
     </div>
     <!-- end Adopters -->
+
+    <!-- Peering -->
+    <div class="container-fluid bg-gradient-blue-radial">
+      <div class="container peering">
+        <div class="container peering--info">
+          <h2>Worldwide Peering</h2>
+          <p>
+            Ethereum client peering can be unreliable, leading to problems with syncing and visibility of new transactions and blocks.
+          </p>
+          <p>
+           As a Source of Truth, INFURA<sup>TM</sup> aims to be immediately aware of new transactions and blocks.
+          </p>
+          <h4>We maintain a worldwide network of clients to have the best peering on the network.</h4>
+          <br/> <br/>
+        </div>
+        <div class="container peering--image"></div>
+      </div>
+    </div>
+    <!-- end Peering -->
+
+    <!-- Team -->
     <div class="container-fluid bg-gradient-blue">
       <div class="container">
         <div class="team">
@@ -464,6 +477,7 @@
         </div>
       </div>
     </div>
+    <!-- end Team -->
 
   </main>
 
