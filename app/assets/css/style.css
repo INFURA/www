@@ -1656,7 +1656,7 @@ p > .sup {
     width: 100%; }
   .how-to .how-to--bg {
     top: 0;
-    opacity: 0.13;
+    opacity: 0.2;
     background: url("../img/svg/bg-sun.svg");
     background-repeat: no-repeat;
     background-size: cover; }
