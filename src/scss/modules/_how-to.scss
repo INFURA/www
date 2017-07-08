@@ -1,143 +1,164 @@
 .how-to {
-  text-align: center;
-  padding-bottom: 3em;
+  position: relative;
+  min-height: 1550px;
 
-  > h3 {
-    @extend %heading-yellow;
-    padding-top: 1.5em;
-    padding-bottom: .5em;
-
-    @include breakpoint(480px) {
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .how-to--bg, .how-to--text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
   }
 
-  .subtitle {
-    color: $cyan;
-    padding-bottom: 1em;
+  .how-to--bg {
+    top: 0;
+    opacity: 0.13;
+    background: url('../img/svg/bg-sun.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  .how-to--list{
-    margin: 3em auto 0;
-    max-width: 100%;
-    @extend %text-on-blue;
-    text-align: left;
-    padding: 0;
-    list-style-type: none;
-    padding-bottom: 2em;
+  .how-to--text {
+    text-align: center;
+    padding-bottom: 3em;
+    z-index: 10;
+    opacity: 1.0;
 
-    @include breakpoint(480px) {
-      margin-top: 2em;
-    }
-    @include breakpoint(710px) {
-      max-width: 80%;
-    }
-    @include breakpoint(960px) {
-      max-width: 70%;
-    }
-    @include breakpoint(1200px) {
-      max-width: 60%;
-    }
-  }
-
-  ol {
-    counter-reset: step;
-  }
-
-  li.col.steps {
-    @extend %border-left-yellow;
-
-    &:before {
-      @extend %number-circle-yellow;
-      counter-increment: step;
-      content: counter(step);
-      left: -19px;
-    }
-
-    &:last-child {
-      border-left: none;
-    }
-
-  }
-
-  .step {
-    margin: -2em auto 0 2em;
-    padding-bottom: 2.5em;
-    a {
-      color: $yellow-light;
-      text-decoration: underline;
-    }
-  }
-
-  .codeshell {
-    padding: 0 10px 0 20px;;
-    text-shadow: none;
-    margin: -10px 10px 30px;
-    background: $code-shell-color;
-    border-radius: 5px;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.4);
-    line-height: 1.8em;
-    font-size: 1.1em;
-    margin-bottom: 3em;
-    overflow: scroll;
-
-    .path {
-      color: #87ceeb;
-    }
-    .command {
-      color: $yellow-light;
-    }
-    .slash {
-      color: #cd5c5c;
-    }
-    .option {
-      color: #dc8c8c;
-    }
-    .line {
-      display: block;
-    }
-    .indent {
-      margin-left: 1em;
-    }
-    .more_indent {
-      margin-left: 3em;
-    }
-  }
-
-  h4.step {
-    font-size: 1.4em;
-  }
-
-  p.step, div.step, table.step {
-    margin-left: 1em;
-
-    @include breakpoint(480px) {
-      margin-left: 3em;
-    }
-  }
-
-  .networks {
-    margin-bottom: 2em;
-
-    th {
-      border-bottom: 1px solid $gray-light;
-      padding-top: .5em;
+    h3.title {
+      @extend %heading-yellow;
+      padding-top: 1.5em;
       padding-bottom: .5em;
-    }
-    tbody>tr:first-child>td {
-      padding-top: .5em;
-    }
-
-    td {
-      padding-right: .5em;
 
       @include breakpoint(480px) {
-        padding-right: 1em;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
-  }
+
+    .subtitle {
+      color: $cyan;
+      padding-bottom: 1em;
+    }
+
+    .how-to--list{
+      margin: 3em auto 0;
+      max-width: 100%;
+      @extend %text-on-blue;
+      text-align: left;
+      padding: 0;
+      list-style-type: none;
+      padding-bottom: 2em;
+
+      @include breakpoint(480px) {
+        margin-top: 2em;
+      }
+      @include breakpoint(710px) {
+        max-width: 80%;
+      }
+      @include breakpoint(960px) {
+        max-width: 70%;
+      }
+      @include breakpoint(1200px) {
+        max-width: 60%;
+      }
+    }
+
+    ol {
+      counter-reset: step;
+    }
+
+    li.col.steps {
+      @extend %border-left-yellow;
+
+      &:before {
+        @extend %number-circle-yellow;
+        counter-increment: step;
+        content: counter(step);
+        left: -19px;
+      }
+
+      &:last-child {
+        border-left: none;
+      }
+
+    }
+
+    .step {
+      margin: -2em auto 0 2em;
+      padding-bottom: 2.5em;
+      a {
+        color: $yellow-light;
+        text-decoration: underline;
+      }
+    }
+
+    .codeshell {
+      padding: 0 10px 0 20px;;
+      text-shadow: none;
+      margin: -10px 10px 30px;
+      background: $code-shell-color;
+      border-radius: 5px;
+      box-shadow: 0 5px 30px rgba(0, 0, 0, 0.4);
+      line-height: 1.8em;
+      font-size: 1.1em;
+      margin-bottom: 3em;
+      overflow: scroll;
+
+      .path {
+        color: #87ceeb;
+      }
+      .command {
+        color: $yellow-light;
+      }
+      .slash {
+        color: #cd5c5c;
+      }
+      .option {
+        color: #dc8c8c;
+      }
+      .line {
+        display: block;
+      }
+      .indent {
+        margin-left: 1em;
+      }
+      .more_indent {
+        margin-left: 3em;
+      }
+    }
+
+    h4.step {
+      font-size: 1.4em;
+    }
+
+    p.step, div.step, table.step {
+      margin-left: 1em;
+
+      @include breakpoint(480px) {
+        margin-left: 3em;
+      }
+    }
+
+    .networks {
+      margin-bottom: 2em;
+
+      th {
+        border-bottom: 1px solid $gray-light;
+        padding-top: .5em;
+        padding-bottom: .5em;
+      }
+      tbody>tr:first-child>td {
+        padding-top: .5em;
+      }
+
+      td {
+        padding-right: .5em;
+
+        @include breakpoint(480px) {
+          padding-right: 1em;
+        }
+      }
+    }
+  } // end how-to--text
 
 
 }
