@@ -83,8 +83,13 @@
     }
 
     .step {
-      margin: -2em auto 0 2em;
+      margin: -2.1em auto 0 1.5em;
       padding-bottom: 2.5em;
+
+      @include breakpoint(480px) {
+        margin-left: 2em;
+      }
+
       a {
         color: $yellow-light;
         text-decoration: underline;
@@ -128,12 +133,15 @@
 
     h4.step {
       font-size: 1.4em;
+      line-height: 1.4em;
     }
 
     p.step, div.step, table.step {
       margin-left: 1em;
+      font-size: .8em;
 
       @include breakpoint(480px) {
+        font-size: 1em;
         margin-left: 3em;
       }
     }
